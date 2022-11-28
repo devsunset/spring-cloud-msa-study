@@ -152,7 +152,7 @@ https://spring.io/guides/gs/contract-rest/
 </a>
 </li>
 <li class="sidebar_child">
-<a href=" https://spring.io/projects/spring-cloud-contract">
+<a href=" https://spring.io/projects/spring-cloud-contract" name="&amp;lpos=apps_scodevmw : 77" onclick="s_objectID='apps_scodevmw : Spring Cloud Contract : 77'">
 <span>Spring Cloud Contract</span>
 </a>
 </li>
