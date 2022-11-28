@@ -332,6 +332,7 @@ Current |Replacement|
 
 ## Service discovery 
 https://spring.io/guides/gs/service-registration-and-discovery/
+
 https://spring.io/guides/gs/spring-cloud-loadbalancer/
 
 Netflix Eureka, HashiCorp Consul
@@ -344,6 +345,7 @@ Netflix Eureka, HashiCorp Consul
 
 ## API gateway
 https://spring.io/projects/spring-cloud-gateway 
+
 https://spring.io/blog/2019/06/18/getting-started-with-spring-cloud-gateway
 
 - MSA의 각 서비스들의 IP와 Port 번호에 대한 단일화된 엔드포인트를 제공
@@ -351,6 +353,7 @@ https://spring.io/blog/2019/06/18/getting-started-with-spring-cloud-gateway
 
 ## Cloud configuration
 https://spring.io/projects/spring-cloud-config
+
 https://spring.io/guides/gs/centralized-configuration/
 
 - 모든 Application의 환경 설정 정보를 한 곳에서 관리
@@ -368,11 +371,13 @@ Resilience4J, Sentinel, Hystrix
 
 ## Tracing
 https://spring.io/projects/spring-cloud-sleuth
+
 https://zipkin.io/
 
 
 ## Testing
 https://spring.io/projects/spring-cloud-contract
+
 https://spring.io/guides/gs/contract-rest/
 
 # ####################################################################
