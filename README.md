@@ -55,6 +55,8 @@ https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog
 
 Spring Cloud는 마이크로서비스의 개발, 배포, 운영에 필요한 아키텍처를 쉽게 구성할 수 있도록 지원하는 Spring Boot기반의 프레임워크 (MSA구성을 지원하는 Springboot기반 Framework)
 
+분산 시스템 상에 필요한 여러 패턴들을 표준 패턴화 시켜 손쉽게 개발할 수 있도록 지원함
+
 # ####################################################################
 
 # Spring Cloud Projects
@@ -336,6 +338,8 @@ Netflix Eureka, HashiCorp Consul
 
 - MSA의 서비스들의 목록과 위치(IP, Port)가 동적으로 변화는 환경에서 서비스들을 효율적으로 관리하기 위한 Service Discovery Server/Client
 - 동적 서비스 등록, 발견
+    - Discovery : 다른 서비스의 연결 정보를 찾는 것
+    - Registry : 서비스의 연결 정보를 등록하는 것
 - 서버 개수 동적 조절
 
 ## API gateway
