@@ -9,7 +9,22 @@ spring-cloud-msa-work - Spring Cloud(MSA) Tutorials
 # ####################################################################
 # Reference
 https://12factor.net/ko/
+
 https://happycloud-lee.tistory.com/207
+https://happycloud-lee.tistory.com/208
+https://happycloud-lee.tistory.com/209
+https://happycloud-lee.tistory.com/210
+https://happycloud-lee.tistory.com/211
+https://happycloud-lee.tistory.com/212
+https://happycloud-lee.tistory.com/213
+https://happycloud-lee.tistory.com/214
+https://happycloud-lee.tistory.com/215
+https://happycloud-lee.tistory.com/216
+https://happycloud-lee.tistory.com/217
+https://happycloud-lee.tistory.com/218
+https://happycloud-lee.tistory.com/219
+https://happycloud-lee.tistory.com/221
+https://github.com/sc-hklee
 
 # ####################################################################
 
