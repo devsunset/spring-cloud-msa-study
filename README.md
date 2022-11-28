@@ -315,18 +315,14 @@ https://spring.io/blog/2018/12/12/spring-cloud-greenwich-rc1-available-now
 
 We recommend the following as replacements for the functionality provided by these modules.
 
-Current 	                    Replacement
-
-Hystrix 	                    Resilience4j
-
-Hystrix Dashboard / Turbine 	Micrometer + Monitoring System
-
-Ribbon 	                        Spring Cloud Loadbalancer
-
-Zuul 1 	                        Spring Cloud Gateway
-
-Archaius 1 	                    Spring Boot external config + Spring Cloud Config 
-
+Current |Replacement|
+|------|---|
+|Hystrix |Resilience4j|
+|Hystrix Dashboard / Turbine |Micrometer + Monitoring System|
+|Ribbon|Spring Cloud Loadbalancer|
+|Zuul 1 |Spring Cloud Gateway|
+|Archaius 1|Spring Boot external config + Spring Cloud Config|
+ 	                    
 
 # ####################################################################
 
