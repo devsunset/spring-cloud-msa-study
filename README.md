@@ -241,11 +241,6 @@ Spring Cloud는 마이크로서비스의 개발, 배포, 운영에 필요한 아
 
     Spring Cloud Kubernetes Config
 
-- 환경설정 파일을 한 곳에 저장, 해당 서버에 접근하여 환경 설정 정보를 가져옴
-- 모든 Application의 환경 설정 정보를 한 곳에서 관리
-- 환경 설정이 변경되어도 전체를 다시 빌드하지 않아도 됨
-
-
 
 서비스 디스커버리
 
@@ -258,8 +253,6 @@ Spring Cloud는 마이크로서비스의 개발, 배포, 운영에 필요한 아
     Spring Cloud Etcd Discovery
 
     Spring Cloud Kubernetes Discovery
-
-
 
 
 상호 통신
@@ -347,6 +340,10 @@ https://spring.io/blog/2019/06/18/getting-started-with-spring-cloud-gateway
 ## Cloud configuration
 https://spring.io/projects/spring-cloud-config
 https://spring.io/guides/gs/centralized-configuration/
+
+- 환경설정 파일을 한 곳에 저장, 해당 서버에 접근하여 환경 설정 정보를 가져옴
+- 모든 Application의 환경 설정 정보를 한 곳에서 관리
+- 환경 설정이 변경되어도 전체를 다시 빌드하지 않아도 됨
 
 ## Circuit breakers
 https://spring.io/projects/spring-cloud-circuitbreaker
