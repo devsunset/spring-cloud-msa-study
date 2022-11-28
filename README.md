@@ -215,5 +215,39 @@ https://happycloud-lee.tistory.com/207
 
 # ####################################################################
 
-# Spring Cloud Guide
+# Micro Service Architecture
 
+* Monolithic Architecture
+전체 애플리케이션이 하나로 되어있어서 보통 동일한 개발 툴을 사용해 개발되며, 배포 및 테스트도 하나의 애플리케이션만 수행하면 되기 때문에 개발 및 환경설정이 간단
+또한 각 컴포넌트들이 함수로 호출 되기 때문에 성능에 제약이 덜하고, 운영 관리가 용이 이런 장점 때문에 작은 볼륨의 시스템을 개발할 때는 매우 유용하지만 시스템이 커지기 시작하고 여러 컴포넌트들이 더해지면 문제가 발생하기 시작
+
+빌드 시간 및 테스트시간, 그리고 배포시간이 오래 걸림
+서비스를 부분적으로 scale-out 하기가 어려움
+하나의 서비스가 모든 서비스에 영향
+서비스/프로젝트가 커지면 커질수록, 영향도 파악 및 전체 시스템 구조의 파악에 어려움
+
+
+* MSA (Micro Service Architecture)
+"the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery."
+참조 : https://martinfowler.com/articles/microservices.html
+
+MSA는 기존의 하나의 application 형태(Monolithic Architecture)가 아닌 application을 서비스별로 나누어 독립적으로 개발하는 아키텍처
+단일 프로그램을 각 컴포넌트 별로 나누어 작은 서비스의 조합으로 구축하는 방법
+각 서비스들은 API 호출을 하는 형식으로 통신
+
+MSA 장점
+- 빠르고 간단한 배포
+- 시스템의 선택적 확장
+- Polyglot 아키텍처 지원
+
+MSA 단점 
+- 기술 복잡도가 높음
+- 느린 속도 
+- 관리 포인트 증가 
+- 테스트 / 트랜잭션 - 서비스가 분리되어 있기 때문에 테스트와 트랜잭션의 복잡도가 증가하고, 많은 자원을 필요
+- 데이터 관리 - 데이터가 여러 서비스에 걸쳐 분산되기 때문에 한번에 조회하기 어렵고, 데이터의 정합성 또한 관리하기 어려움
+
+
+# ####################################################################
+
+# Spirng Cloud
