@@ -83,6 +83,8 @@ https://spring.io/guides/gs/contract-rest/
 
 # ####################################################################
 
+# Spring Cloud Projects
+
 <li class="sidebar_project active">
 <div>
 <a href="https://spring.io/projects/spring-cloud" name="&amp;lpos=apps_scodevmw : 65" onclick="s_objectID='apps_scodevmw : Spring Cloud : 65'">Spring Cloud</a>
