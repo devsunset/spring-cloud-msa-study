@@ -220,7 +220,9 @@ MSA 단점
 </ul>
 </li>
 
-분산 컨피규레이션
+# ####################################################################
+
+ * 분산 컨피규레이션
 
     Spring Cloud Config
 
@@ -233,7 +235,7 @@ MSA 단점
     Spring Cloud Kubernetes Config
 
 
-서비스 디스커버리
+* 서비스 디스커버리
 
     Spring Cloud Eureka
 
@@ -246,7 +248,7 @@ MSA 단점
     Spring Cloud Kubernetes Discovery
 
 
-상호 통신
+* 상호 통신
 
     Spring Cloud Hystrix
 
@@ -257,7 +259,7 @@ MSA 단점
     Spring Cloud Zuul
 
 
-추적
+* 추적
 
     Spring Cloud Sleuth
 
@@ -266,7 +268,7 @@ MSA 단점
     Spring Cloud Sleuth Stream
 
 
-클라우드 플랫폼 지원
+* 클라우드 플랫폼 지원
 
     Spring Cloud Cloud Foundry
 
@@ -277,7 +279,7 @@ MSA 단점
     Spring Cloud Connectors
 
 
-메시징 및 통합
+* 메시징 및 통합
 
     Spring Cloud Stream
 
@@ -288,7 +290,7 @@ MSA 단점
     Spring Cloud Data Flow
 
 
-기타
+* 기타
 
     Spring Cloud Contract
 
@@ -324,7 +326,7 @@ Resilience4J, Sentinel, Hystrix
 https://spring.io/projects/spring-cloud-sleuth
 https://zipkin.io/
 
-# Testing
+## Testing
 https://spring.io/projects/spring-cloud-contract
 https://spring.io/guides/gs/contract-rest/
 
