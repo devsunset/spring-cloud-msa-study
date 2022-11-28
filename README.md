@@ -59,8 +59,6 @@ Spring Cloud는 마이크로서비스의 개발, 배포, 운영에 필요한 아
 
 # Spring Cloud Projects
 
-* [cloud](https://spring.io/cloud) 
-
 <li class="sidebar_project active">
 <div>
 <a href="https://spring.io/projects/spring-cloud">Spring Cloud</a>
@@ -314,13 +312,21 @@ Spring Cloud는 마이크로서비스의 개발, 배포, 운영에 필요한 아
 https://spring.io/blog/2018/12/12/spring-cloud-greenwich-rc1-available-now
 
 * Replacements
+
 We recommend the following as replacements for the functionality provided by these modules.
+
 Current 	                    Replacement
+
 Hystrix 	                    Resilience4j
+
 Hystrix Dashboard / Turbine 	Micrometer + Monitoring System
+
 Ribbon 	                        Spring Cloud Loadbalancer
+
 Zuul 1 	                        Spring Cloud Gateway
+
 Archaius 1 	                    Spring Boot external config + Spring Cloud Config 
+
 
 # ####################################################################
 
