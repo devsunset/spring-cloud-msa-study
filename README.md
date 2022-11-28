@@ -48,39 +48,6 @@ MSA 단점
 - 데이터 관리 - 데이터가 여러 서비스에 걸쳐 분산되기 때문에 한번에 조회하기 어렵고, 데이터의 정합성 또한 관리하기 어려움
 
 
-
-
-# ####################################################################
-
-# Spirng Cloud
-
-
-# Service discovery 
-https://spring.io/guides/gs/service-registration-and-discovery/
-https://spring.io/guides/gs/spring-cloud-loadbalancer/
-Netflix Eureka, HashiCorp Consul
-
-# API gateway
-https://spring.io/projects/spring-cloud-gateway 
-https://spring.io/blog/2019/06/18/getting-started-with-spring-cloud-gateway
-
-# Cloud configuration
-https://spring.io/projects/spring-cloud-config
-https://spring.io/guides/gs/centralized-configuration/
-
-# Circuit breakers
-https://spring.io/projects/spring-cloud-circuitbreaker
-https://spring.io/guides/gs/cloud-circuit-breaker/
-Resilience4J, Sentinel, Hystrix
-
-# Tracing
-https://spring.io/projects/spring-cloud-sleuth
-https://zipkin.io/
-
-# Testing
-https://spring.io/projects/spring-cloud-contract
-https://spring.io/guides/gs/contract-rest/
-
 # ####################################################################
 
 # Spring Cloud Projects
@@ -330,7 +297,38 @@ https://spring.io/guides/gs/contract-rest/
     Spring Cloud Task
 
     Spring Cloud Cluster
-    
+
+# ####################################################################
+
+# Spirng Cloud
+
+# Service discovery 
+https://spring.io/guides/gs/service-registration-and-discovery/
+https://spring.io/guides/gs/spring-cloud-loadbalancer/
+Netflix Eureka, HashiCorp Consul
+
+# API gateway
+https://spring.io/projects/spring-cloud-gateway 
+https://spring.io/blog/2019/06/18/getting-started-with-spring-cloud-gateway
+
+# Cloud configuration
+https://spring.io/projects/spring-cloud-config
+https://spring.io/guides/gs/centralized-configuration/
+
+# Circuit breakers
+https://spring.io/projects/spring-cloud-circuitbreaker
+https://spring.io/guides/gs/cloud-circuit-breaker/
+Resilience4J, Sentinel, Hystrix
+
+# Tracing
+https://spring.io/projects/spring-cloud-sleuth
+https://zipkin.io/
+
+# Testing
+https://spring.io/projects/spring-cloud-contract
+https://spring.io/guides/gs/contract-rest/
+
+# ####################################################################
 
 
 
