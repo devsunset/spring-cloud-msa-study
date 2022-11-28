@@ -331,11 +331,19 @@ Current |Replacement|
 ## Service discovery 
 https://spring.io/guides/gs/service-registration-and-discovery/
 https://spring.io/guides/gs/spring-cloud-loadbalancer/
+
 Netflix Eureka, HashiCorp Consul
+
+- 동적 서비스 등록, 발견
+- MSA의 서비스들의 목록과 위치(IP, Port)가 동적으로 변화는 환경에서 서비스들을 효율적으로 관리하기 위한 Service Discovery Server/Client
+- 서버 개수 동적 조절
 
 ## API gateway
 https://spring.io/projects/spring-cloud-gateway 
 https://spring.io/blog/2019/06/18/getting-started-with-spring-cloud-gateway
+
+- MSA의 각 서비스들의 IP와 Port 번호에 대한 단일화된 엔드포인트를 제공
+- 인증, 모니터링, 오케스트레이션, 사용량  제어, 요청/응답 등의 기능을 포함한 향상된 Reverse Proxy
 
 ## Cloud configuration
 https://spring.io/projects/spring-cloud-config
@@ -348,7 +356,11 @@ https://spring.io/guides/gs/centralized-configuration/
 ## Circuit breakers
 https://spring.io/projects/spring-cloud-circuitbreaker
 https://spring.io/guides/gs/cloud-circuit-breaker/
+
 Resilience4J, Sentinel, Hystrix
+
+- Software 기반 Circuit Breaker, 장애 상황을 견딜 수 있도록 해주는 Spring Cloud component
+- MSA에서 특정 MSA 서비스 장애로 인해 다른 MSA 서비스에도 장애를 일으킬 수 있는 가능성을 방지하는 것
 
 ## Tracing
 https://spring.io/projects/spring-cloud-sleuth
