@@ -218,6 +218,7 @@ https://happycloud-lee.tistory.com/207
 # Micro Service Architecture
 
 * Monolithic Architecture
+
 전체 애플리케이션이 하나로 되어있어서 보통 동일한 개발 툴을 사용해 개발되며, 배포 및 테스트도 하나의 애플리케이션만 수행하면 되기 때문에 개발 및 환경설정이 간단
 또한 각 컴포넌트들이 함수로 호출 되기 때문에 성능에 제약이 덜하고, 운영 관리가 용이 이런 장점 때문에 작은 볼륨의 시스템을 개발할 때는 매우 유용하지만 시스템이 커지기 시작하고 여러 컴포넌트들이 더해지면 문제가 발생하기 시작
 
@@ -228,6 +229,7 @@ https://happycloud-lee.tistory.com/207
 
 
 * MSA (Micro Service Architecture)
+
 "the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery."
 참조 : https://martinfowler.com/articles/microservices.html
 
