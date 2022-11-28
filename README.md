@@ -1,17 +1,10 @@
 # spring-cloud-msa-work
 spring-cloud-msa-work - Spring Cloud(MSA) Tutorials 
 
-
 # ####################################################################
-
 * [Spring](https://spring.io/)
-
-# ####################################################################
-
 * [microservices](https://spring.io/microservices)
-
 * [cloud](https://spring.io/cloud) 
-
 # ####################################################################
 
 # Service discovery 
