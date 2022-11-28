@@ -5,10 +5,13 @@ spring-cloud-msa-work - Spring Cloud(MSA) Tutorials
 * [Spring](https://spring.io/)
 * [microservices](https://spring.io/microservices)
 * [cloud](https://spring.io/cloud) 
+* [spring-cloud-samples](https://github.com/spring-cloud-samples) 
 
 # ####################################################################
 # Reference
 https://12factor.net/ko/
+
+https://www.samsungsds.com/kr/insights/spring_cloud.html
 
 https://happycloud-lee.tistory.com/207
 
