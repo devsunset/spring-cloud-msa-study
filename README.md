@@ -334,8 +334,8 @@ https://spring.io/guides/gs/spring-cloud-loadbalancer/
 
 Netflix Eureka, HashiCorp Consul
 
-- 동적 서비스 등록, 발견
 - MSA의 서비스들의 목록과 위치(IP, Port)가 동적으로 변화는 환경에서 서비스들을 효율적으로 관리하기 위한 Service Discovery Server/Client
+- 동적 서비스 등록, 발견
 - 서버 개수 동적 조절
 
 ## API gateway
@@ -349,8 +349,8 @@ https://spring.io/blog/2019/06/18/getting-started-with-spring-cloud-gateway
 https://spring.io/projects/spring-cloud-config
 https://spring.io/guides/gs/centralized-configuration/
 
-- 환경설정 파일을 한 곳에 저장, 해당 서버에 접근하여 환경 설정 정보를 가져옴
 - 모든 Application의 환경 설정 정보를 한 곳에서 관리
+- 환경설정 파일을 한 곳에 저장, 해당 서버에 접근하여 환경 설정 정보를 가져옴
 - 환경 설정이 변경되어도 전체를 다시 빌드하지 않아도 됨
 
 ## Circuit breakers
@@ -359,12 +359,13 @@ https://spring.io/guides/gs/cloud-circuit-breaker/
 
 Resilience4J, Sentinel, Hystrix
 
-- Software 기반 Circuit Breaker, 장애 상황을 견딜 수 있도록 해주는 Spring Cloud component
 - MSA에서 특정 MSA 서비스 장애로 인해 다른 MSA 서비스에도 장애를 일으킬 수 있는 가능성을 방지하는 것
+- Software 기반 Circuit Breaker, 장애 상황을 견딜 수 있도록 해주는 Spring Cloud component
 
 ## Tracing
 https://spring.io/projects/spring-cloud-sleuth
 https://zipkin.io/
+
 
 ## Testing
 https://spring.io/projects/spring-cloud-contract
