@@ -302,29 +302,29 @@ MSA 단점
 
 # Spirng Cloud
 
-# Service discovery 
+## Service discovery 
 https://spring.io/guides/gs/service-registration-and-discovery/
 https://spring.io/guides/gs/spring-cloud-loadbalancer/
 Netflix Eureka, HashiCorp Consul
 
-# API gateway
+## API gateway
 https://spring.io/projects/spring-cloud-gateway 
 https://spring.io/blog/2019/06/18/getting-started-with-spring-cloud-gateway
 
-# Cloud configuration
+## Cloud configuration
 https://spring.io/projects/spring-cloud-config
 https://spring.io/guides/gs/centralized-configuration/
 
-# Circuit breakers
+## Circuit breakers
 https://spring.io/projects/spring-cloud-circuitbreaker
 https://spring.io/guides/gs/cloud-circuit-breaker/
 Resilience4J, Sentinel, Hystrix
 
-# Tracing
+## Tracing
 https://spring.io/projects/spring-cloud-sleuth
 https://zipkin.io/
 
-# Testing
+## Testing
 https://spring.io/projects/spring-cloud-contract
 https://spring.io/guides/gs/contract-rest/
 
