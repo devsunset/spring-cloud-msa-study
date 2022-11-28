@@ -205,10 +205,57 @@ https://spring.io/guides/gs/contract-rest/
 </ul>
 </li>
 
+
+프로젝트 개요
+
+
+분산 컨피규레이션
+    Spring Cloud Config
+    Spring Cloud Zookeeper Config
+    Spring Cloud Consul Config
+    Spring Cloud Etcd Config
+    Spring Cloud Kubernetes Config
+
+서비스 디스커버리
+    Spring Cloud Eureka
+    Spring Cloud Zookeeper Discovery
+    Spring Cloud Consul Discovery
+    Spring Cloud Etcd Discovery
+    Spring Cloud Kubernetes Discovery
+
+상호 통신
+    Spring Cloud Hystrix
+    Spring Cloud Ribbon
+    Spring Cloud Feign
+    Spring Cloud Zuul
+
+추적
+    Spring Cloud Sleuth
+    Spring Cloud Sleuth Zipkin
+    Spring Cloud Sleuth Stream
+
+클라우드 플랫폼 지원
+    Spring Cloud Cloud Foundry
+    Spring Cloud AWS
+    Spring Cloud Function
+    Spring Cloud Connectors
+
+메시징 및 통합
+    Spring Cloud Stream
+    Spring Cloud Bus
+    Spring Cloud Stream Apps
+    Spring Cloud Data Flow
+
+기타
+    Spring Cloud Contract
+    Spring Cloud Security
+    Spring Cloud Task
+    Spring Cloud Cluster
+
 # ####################################################################
 
 # Reference
-
+https://12factor.net/ko/
 https://happycloud-lee.tistory.com/207
 
 
@@ -253,3 +300,4 @@ MSA 단점
 # ####################################################################
 
 # Spirng Cloud
+
