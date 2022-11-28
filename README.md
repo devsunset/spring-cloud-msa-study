@@ -221,20 +221,32 @@ MSA 단점
 </li>
 
 분산 컨피규레이션
+
     Spring Cloud Config
+
     Spring Cloud Zookeeper Config
+
     Spring Cloud Consul Config
+
     Spring Cloud Etcd Config
+
     Spring Cloud Kubernetes Config
 
+
 서비스 디스커버리
+
     Spring Cloud Eureka
+
     Spring Cloud Zookeeper Discovery
+
     Spring Cloud Consul Discovery
+
     Spring Cloud Etcd Discovery
+
     Spring Cloud Kubernetes Discovery
 
-상호 통신 
+
+상호 통신
 
     Spring Cloud Hystrix
 
@@ -312,7 +324,7 @@ Resilience4J, Sentinel, Hystrix
 https://spring.io/projects/spring-cloud-sleuth
 https://zipkin.io/
 
-## Testing
+# Testing
 https://spring.io/projects/spring-cloud-contract
 https://spring.io/guides/gs/contract-rest/
 
