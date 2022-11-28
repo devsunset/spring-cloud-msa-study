@@ -87,72 +87,71 @@ https://spring.io/guides/gs/contract-rest/
 
 <li class="sidebar_project active">
 <div>
-<a href="https://spring.io/projects/spring-cloud" name="&amp;lpos=apps_scodevmw : 65" onclick="s_objectID='apps_scodevmw : Spring Cloud : 65'">Spring Cloud</a>
-<i class="fas fa-chevron-down" aria-hidden="true"></i>
+<a href="https://spring.io/projects/spring-cloud">Spring Cloud</a>
 </div>
 <ul class="sidebar_children">
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-azure" name="&amp;lpos=apps_scodevmw : 66" onclick="s_objectID='apps_scodevmw : Spring Cloud Azure : 66'">
+<a href="https://spring.io/projects/spring-cloud-azure">
 <span>Spring Cloud Azure</span>
 </a>
 </li>
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-alibaba" name="&amp;lpos=apps_scodevmw : 67" onclick="s_objectID='apps_scodevmw : Spring Cloud Alibaba : 67'">
+<a href="https://spring.io/projects/spring-cloud-alibaba">
 <span>Spring Cloud Alibaba</span>
 </a>
 </li>
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-aws" name="&amp;lpos=apps_scodevmw : 68" onclick="s_objectID='apps_scodevmw : Spring Cloud for Amazon Web Services : 68'">
+<a href="https://spring.io/projects/spring-cloud-aws">
 <span>Spring Cloud for Amazon Web Services</span>
 </a>
 </li>
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-bus" name="&amp;lpos=apps_scodevmw : 69" onclick="s_objectID='apps_scodevmw : Spring Cloud Bus : 69'">
+<a href="https://spring.io/projects/spring-cloud-bus">
 <span>Spring Cloud Bus</span>
 </a>
 </li>
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-circuitbreaker" name="&amp;lpos=apps_scodevmw : 70" onclick="s_objectID='apps_scodevmw : Spring Cloud Circuit Breaker : 70'">
+<a href="https://spring.io/projects/spring-cloud-circuitbreaker">
 <span>Spring Cloud Circuit Breaker</span>
 </a>
 </li>
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-cli" name="&amp;lpos=apps_scodevmw : 71" onclick="s_objectID='apps_scodevmw : Spring Cloud CLI : 71'">
+<a href="https://spring.io/projects/spring-cloud-cli">
 <span>Spring Cloud CLI</span>
 </a>
 </li>
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-cloudfoundry" name="&amp;lpos=apps_scodevmw : 72" onclick="s_objectID='apps_scodevmw : Spring Cloud for Cloud Foundry : 72'">
+<a href="https://spring.io/projects/spring-cloud-cloudfoundry">
 <span>Spring Cloud for Cloud Foundry</span>
 </a>
 </li>
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-cloudfoundry-service-broker" name="&amp;lpos=apps_scodevmw : 73" onclick="s_objectID='apps_scodevmw : Spring Cloud - Cloud Foundry Service Broker : 73'">
+<a href="https://spring.io/projects/spring-cloud-cloudfoundry-service-broker">
 <span>Spring Cloud - Cloud Foundry Service Broker</span>
 </a>
 </li>
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-commons" name="&amp;lpos=apps_scodevmw : 74" onclick="s_objectID='apps_scodevmw : Spring Cloud Commons : 74'">
+<a href="https://spring.io/projects/spring-cloud-commons">
 <span>Spring Cloud Commons</span>
 </a>
 </li>
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-config" name="&amp;lpos=apps_scodevmw : 75" onclick="s_objectID='apps_scodevmw : Spring Cloud Config : 75'">
+<a href="https://spring.io/projects/spring-cloud-config">
 <span>Spring Cloud Config</span>
 </a>
 </li>
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-connectors" name="&amp;lpos=apps_scodevmw : 76" onclick="s_objectID='apps_scodevmw : Spring Cloud Connectors : 76'">
+<a href="https://spring.io/projects/spring-cloud-connectors">
 <span>Spring Cloud Connectors</span>
 </a>
 </li>
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-consul" name="&amp;lpos=apps_scodevmw : 77" onclick="s_objectID='apps_scodevmw : Spring Cloud Consul : 77'">
+<a href="https://spring.io/projects/spring-cloud-consul">
 <span>Spring Cloud Consul</span>
 </a>
 </li>
 <li class="sidebar_child">
-<a href=" https://spring.io/projects/spring-cloud-contract" name="&amp;lpos=apps_scodevmw : 77" onclick="s_objectID='apps_scodevmw : Spring Cloud Contract : 77'">
+<a href=" https://spring.io/projects/spring-cloud-contract">
 <span>Spring Cloud Contract</span>
 </a>
 </li>
@@ -227,27 +226,27 @@ https://spring.io/guides/gs/contract-rest/
 </a>
 </li>
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-task" name="&amp;lpos=apps_scodevmw : 93" onclick="s_objectID='apps_scodevmw : Spring Cloud Task : 93'">
+<a href="https://spring.io/projects/spring-cloud-task">
 <span>Spring Cloud Task</span>
 </a>
 </li>
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-task-app-starters" name="&amp;lpos=apps_scodevmw : 94" onclick="s_objectID='apps_scodevmw : Spring Cloud Task App Starters : 94'">
+<a href="https://spring.io/projects/spring-cloud-task-app-starters">
 <span>Spring Cloud Task App Starters</span>
 </a>
 </li>
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-vault" name="&amp;lpos=apps_scodevmw : 95" onclick="s_objectID='apps_scodevmw : Spring Cloud Vault : 95'">
+<a href="https://spring.io/projects/spring-cloud-vault">
 <span>Spring Cloud Vault</span>
 </a>
 </li>
 <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-zookeeper" name="&amp;lpos=apps_scodevmw : 96" onclick="s_objectID='apps_scodevmw : Spring Cloud Zookeeper : 96'">
+<a href="https://spring.io/projects/spring-cloud-zookeeper">
 <span>Spring Cloud Zookeeper</span>
 </a>
 </li>
  <li class="sidebar_child">
-<a href="https://spring.io/projects/spring-cloud-app-broker" name="&amp;lpos=apps_scodevmw : 97" onclick="s_objectID='apps_scodevmw : Spring Cloud App Broker : 97'">
+<a href="https://spring.io/projects/spring-cloud-app-broker">
 <span>Spring Cloud App Broker</span>
 </a>
 </li>
