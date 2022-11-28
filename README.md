@@ -55,11 +55,11 @@ https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog
 
 Spring Cloud는 마이크로서비스의 개발, 배포, 운영에 필요한 아키텍처를 쉽게 구성할 수 있도록 지원하는 Spring Boot기반의 프레임워크 (MSA구성을 지원하는 Springboot기반 Framework)
 
-
-
 # ####################################################################
 
 # Spring Cloud Projects
+
+* [cloud](https://spring.io/cloud) 
 
 <li class="sidebar_project active">
 <div>
@@ -308,6 +308,19 @@ Spring Cloud는 마이크로서비스의 개발, 배포, 운영에 필요한 아
     Spring Cloud Task
 
     Spring Cloud Cluster
+
+
+2018년 12월부터 아래 component들은 Maintenance모드 전환 Spring cloud 2.4.X부터는 더 이상 지원하지 안함
+https://spring.io/blog/2018/12/12/spring-cloud-greenwich-rc1-available-now
+
+* Replacements
+We recommend the following as replacements for the functionality provided by these modules.
+Current 	                    Replacement
+Hystrix 	                    Resilience4j
+Hystrix Dashboard / Turbine 	Micrometer + Monitoring System
+Ribbon 	                        Spring Cloud Loadbalancer
+Zuul 1 	                        Spring Cloud Gateway
+Archaius 1 	                    Spring Boot external config + Spring Cloud Config 
 
 # ####################################################################
 
