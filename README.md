@@ -47,6 +47,15 @@ MSA 단점
 - 테스트 / 트랜잭션 - 서비스가 분리되어 있기 때문에 테스트와 트랜잭션의 복잡도가 증가하고, 많은 자원을 필요
 - 데이터 관리 - 데이터가 여러 서비스에 걸쳐 분산되기 때문에 한번에 조회하기 어렵고, 데이터의 정합성 또한 관리하기 어려움
 
+# ####################################################################
+
+# Spring Cloud 
+
+https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FZad89%2FbtqWX6p8jHY%2FZbxcRLq9OIH1KnOwBwKHFK%2Fimg.png
+
+Spring Cloud는 마이크로서비스의 개발, 배포, 운영에 필요한 아키텍처를 쉽게 구성할 수 있도록 지원하는 Spring Boot기반의 프레임워크 (MSA구성을 지원하는 Springboot기반 Framework)
+
+
 
 # ####################################################################
 
