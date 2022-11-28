@@ -241,7 +241,7 @@ Spring Cloud는 마이크로서비스의 개발, 배포, 운영에 필요한 아
 
     Spring Cloud Kubernetes Config
 
-Spring Cloud Config 서버를 사용하여 Spring Boot Application의 환경설정 파일을 한 곳에 저장, 해당 서버에 접근하여 환경 설정 정보를 가져옴
+- 환경설정 파일을 한 곳에 저장, 해당 서버에 접근하여 환경 설정 정보를 가져옴
 - 모든 Application의 환경 설정 정보를 한 곳에서 관리
 - 환경 설정이 변경되어도 전체를 다시 빌드하지 않아도 됨
 
@@ -258,6 +258,8 @@ Spring Cloud Config 서버를 사용하여 Spring Boot Application의 환경설�
     Spring Cloud Etcd Discovery
 
     Spring Cloud Kubernetes Discovery
+
+
 
 
 상호 통신
