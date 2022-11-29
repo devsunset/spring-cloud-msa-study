@@ -10,22 +10,11 @@ spring-cloud-msa-work - Spring Cloud(MSA) Tutorials
 
 # ####################################################################
 # Reference
+- https://12factor.net/
 - https://12factor.net/ko/
 - https://www.samsungsds.com/kr/insights/spring_cloud.html
-- https://happycloud-lee.tistory.com/207
-- https://happycloud-lee.tistory.com/208
-- https://happycloud-lee.tistory.com/209
-- https://happycloud-lee.tistory.com/210
-- https://happycloud-lee.tistory.com/211
-- https://happycloud-lee.tistory.com/212
-- https://happycloud-lee.tistory.com/213
-- https://happycloud-lee.tistory.com/214
-- https://happycloud-lee.tistory.com/215
-- https://happycloud-lee.tistory.com/216
-- https://happycloud-lee.tistory.com/217
-- https://happycloud-lee.tistory.com/218
-- https://happycloud-lee.tistory.com/219
-- https://happycloud-lee.tistory.com/221
+
+- https://happycloud-lee.tistory.com/207  ~ /221
 - https://github.com/sc-hklee
 - https://wonit.tistory.com/category/%F0%9F%92%8A%20Java/-%20Spring%20Cloud%20for%20MSA
 
@@ -348,48 +337,74 @@ Current |Replacement|
 
 # ####################################################################
 
-# Spirng Cloud
+# Spirng Cloud (https://spring.io/cloud)
 
 
 ## Service discovery 
-https://spring.io/guides/gs/service-registration-and-discovery/
-
-https://spring.io/guides/gs/spring-cloud-loadbalancer/
-
-Netflix Eureka, HashiCorp Consul
-
 - MSA의 서비스들의 목록과 위치(IP, Port)가 동적으로 변화는 환경에서 서비스들을 효율적으로 관리하기 위한 Service Discovery Server/Client
 - 동적 서비스 등록, 발견
     - Discovery : 다른 서비스의 연결 정보를 찾는 것
     - Registry : 서비스의 연결 정보를 등록하는 것
 - 서버 개수 동적 조절
 
+Netflix Eureka
+- https://github.com/Netflix/eureka
+- https://spring.io/projects/spring-cloud-netflix
+
+HashiCorp Consul 
+- https://www.consul.io/
+- https://spring.io/projects/spring-cloud-consul
+
+https://spring.io/projects/spring-cloud-zookeeper
+
+https://spring.io/projects/spring-cloud-kubernetes
+
+https://spring.io/guides/gs/spring-cloud-loadbalancer/
+
+
+* https://spring.io/guides/gs/service-registration-and-discovery/
+
+* gs-service-registration-and-discovery
+
 ## API gateway
-https://spring.io/projects/spring-cloud-gateway 
-
-https://spring.io/blog/2019/06/18/getting-started-with-spring-cloud-gateway
-
 - MSA의 각 서비스들의 IP와 Port 번호에 대한 단일화된 엔드포인트를 제공
 - 인증, 모니터링, 오케스트레이션, 사용량  제어, 요청/응답 등의 기능을 포함한 향상된 Reverse Proxy
 
+https://spring.io/projects/spring-cloud-gateway 
+
+* https://spring.io/guides/gs/gateway/ 
+
+* https://spring.io/blog/2019/06/18/getting-started-with-spring-cloud-gateway
+
+
 ## Cloud configuration
-https://spring.io/projects/spring-cloud-config
-
-https://spring.io/guides/gs/centralized-configuration/
-
 - 모든 Application의 환경 설정 정보를 한 곳에서 관리
 - 환경설정 파일을 한 곳에 저장, 해당 서버에 접근하여 환경 설정 정보를 가져옴
 - 환경 설정이 변경되어도 전체를 다시 빌드하지 않아도 됨
 
+https://spring.io/projects/spring-cloud-config
+
+* https://spring.io/guides/gs/centralized-configuration/
+
+
 ## Circuit breakers
-https://spring.io/projects/spring-cloud-circuitbreaker
-
-https://spring.io/guides/gs/cloud-circuit-breaker/
-
-Resilience4J, Sentinel, Hystrix
-
 - MSA에서 특정 MSA 서비스 장애로 인해 다른 MSA 서비스에도 장애를 일으킬 수 있는 가능성을 방지하는 것
 - Software 기반 Circuit Breaker, 장애 상황을 견딜 수 있도록 해주는 Spring Cloud component
+
+Resilience4J
+- https://resilience4j.readme.io/docs/getting-started
+
+Sentinel
+- https://github.com/alibaba/Sentinel/wiki/Circuit-Breaking
+
+Hystrix
+- https://github.com/Netflix/Hystrix/wiki
+
+
+https://spring.io/projects/spring-cloud-circuitbreaker
+
+* https://spring.io/guides/gs/cloud-circuit-breaker/
+
 
 ## Tracing
 https://spring.io/projects/spring-cloud-sleuth
@@ -400,7 +415,7 @@ https://zipkin.io/
 ## Testing
 https://spring.io/projects/spring-cloud-contract
 
-https://spring.io/guides/gs/contract-rest/
+* https://spring.io/guides/gs/contract-rest/
 
 
 ## start.spring.io (Spring Cloud)
