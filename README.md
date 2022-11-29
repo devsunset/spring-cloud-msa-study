@@ -361,10 +361,11 @@ https://spring.io/projects/spring-cloud-kubernetes
 
 https://spring.io/guides/gs/spring-cloud-loadbalancer/
 
+example
 
-* https://spring.io/guides/gs/service-registration-and-discovery/
+https://spring.io/guides/gs/service-registration-and-discovery/
 
-* gs-service-registration-and-discovery
+gs-service-registration-and-discovery
 
 ## API gateway
 - MSA의 각 서비스들의 IP와 Port 번호에 대한 단일화된 엔드포인트를 제공
@@ -384,7 +385,9 @@ https://spring.io/projects/spring-cloud-gateway
 
 https://spring.io/projects/spring-cloud-config
 
-* https://spring.io/guides/gs/centralized-configuration/
+example
+
+https://spring.io/guides/gs/centralized-configuration/
 
 
 ## Circuit breakers
@@ -403,7 +406,9 @@ Hystrix
 
 https://spring.io/projects/spring-cloud-circuitbreaker
 
-* https://spring.io/guides/gs/cloud-circuit-breaker/
+example
+
+https://spring.io/guides/gs/cloud-circuit-breaker/
 
 
 ## Tracing
@@ -415,7 +420,9 @@ https://zipkin.io/
 ## Testing
 https://spring.io/projects/spring-cloud-contract
 
-* https://spring.io/guides/gs/contract-rest/
+example
+
+https://spring.io/guides/gs/contract-rest/
 
 
 ## start.spring.io (Spring Cloud)
