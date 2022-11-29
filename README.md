@@ -373,9 +373,11 @@ gs-service-registration-and-discovery
 
 https://spring.io/projects/spring-cloud-gateway 
 
-* https://spring.io/guides/gs/gateway/ 
+* example
 
-* https://spring.io/blog/2019/06/18/getting-started-with-spring-cloud-gateway
+https://spring.io/guides/gs/gateway/ 
+
+https://spring.io/blog/2019/06/18/getting-started-with-spring-cloud-gateway
 
 
 ## Cloud configuration
@@ -385,7 +387,7 @@ https://spring.io/projects/spring-cloud-gateway
 
 https://spring.io/projects/spring-cloud-config
 
-example
+* example
 
 https://spring.io/guides/gs/centralized-configuration/
 
@@ -406,7 +408,7 @@ Hystrix
 
 https://spring.io/projects/spring-cloud-circuitbreaker
 
-example
+* example
 
 https://spring.io/guides/gs/cloud-circuit-breaker/
 
@@ -420,7 +422,8 @@ https://zipkin.io/
 ## Testing
 https://spring.io/projects/spring-cloud-contract
 
-example
+
+* example
 
 https://spring.io/guides/gs/contract-rest/
 
