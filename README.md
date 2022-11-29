@@ -238,6 +238,15 @@ https://spring.io/projects/spring-cloud
 
 # ####################################################################
 
+- Distributed/versioned configuration
+- Service registration and discovery
+- Routing
+- Service-to-service calls
+- Load balancing
+- Circuit Breakers
+- Distributed messaging
+
+
 분산 컨피규레이션
 
     Spring Cloud Config
@@ -359,11 +368,13 @@ https://spring.io/projects/spring-cloud-kubernetes
 
 https://spring.io/guides/gs/spring-cloud-loadbalancer/
 
-* example
-
+[example]
 https://spring.io/guides/gs/service-registration-and-discovery/
 
 gs-service-registration-and-discovery
+
+https://docs.spring.io/spring-cloud-netflix/docs/3.1.4/reference/html/#netflix-eureka-client-starter
+https://wonit.tistory.com/495
 
 ## API gateway
 - MSA의 각 서비스들의 IP와 Port 번호에 대한 단일화된 엔드포인트를 제공
