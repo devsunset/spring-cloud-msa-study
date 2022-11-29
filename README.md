@@ -354,13 +354,17 @@ Current |Replacement|
     - Registry : 서비스의 연결 정보를 등록하는 것
 - 서버 개수 동적 조절
 
+https://docs.spring.io/spring-cloud-netflix/docs/3.1.4/reference/html/
+
+https://spring.io/projects/spring-cloud-netflix
+
 Netflix Eureka
 - https://github.com/Netflix/eureka
-- https://spring.io/projects/spring-cloud-netflix
 
 HashiCorp Consul 
 - https://www.consul.io/
-- https://spring.io/projects/spring-cloud-consul
+
+https://spring.io/projects/spring-cloud-consul
 
 https://spring.io/projects/spring-cloud-zookeeper
 
@@ -370,11 +374,7 @@ https://spring.io/guides/gs/spring-cloud-loadbalancer/
 
 [example]
 
-https://docs.spring.io/spring-cloud-netflix/docs/3.1.4/reference/html/
-
 https://spring.io/guides/gs/service-registration-and-discovery/
-
-gs-service-registration-and-discovery
 
 https://wonit.tistory.com/495
 
@@ -382,15 +382,13 @@ https://wonit.tistory.com/495
 - MSA의 각 서비스들의 IP와 Port 번호에 대한 단일화된 엔드포인트를 제공
 - 인증, 모니터링, 오케스트레이션, 사용량  제어, 요청/응답 등의 기능을 포함한 향상된 Reverse Proxy
 
+https://docs.spring.io/spring-cloud-gateway/docs/3.1.4/reference/html/
+
 https://spring.io/projects/spring-cloud-gateway 
 
 [example]
 
-https://docs.spring.io/spring-cloud-gateway/docs/3.1.4/reference/html/
-
 https://spring.io/guides/gs/gateway/ 
-
-gs-gateway
 
 https://wonit.tistory.com/497
 
