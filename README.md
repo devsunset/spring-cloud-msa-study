@@ -348,6 +348,9 @@ Current |Replacement|
 
 
 ## Service discovery 
+
+https://docs.spring.io/spring-cloud-netflix/docs/3.1.4/reference/html/
+
 - MSA의 서비스들의 목록과 위치(IP, Port)가 동적으로 변화는 환경에서 서비스들을 효율적으로 관리하기 위한 Service Discovery Server/Client
 - 동적 서비스 등록, 발견
     - Discovery : 다른 서비스의 연결 정보를 찾는 것
@@ -374,10 +377,13 @@ https://spring.io/guides/gs/service-registration-and-discovery/
 
 gs-service-registration-and-discovery
 
-https://docs.spring.io/spring-cloud-netflix/docs/3.1.4/reference/html/#netflix-eureka-client-starter
+
 https://wonit.tistory.com/495
 
 ## API gateway
+
+https://docs.spring.io/spring-cloud-gateway/docs/3.1.4/reference/html/
+
 - MSA의 각 서비스들의 IP와 Port 번호에 대한 단일화된 엔드포인트를 제공
 - 인증, 모니터링, 오케스트레이션, 사용량  제어, 요청/응답 등의 기능을 포함한 향상된 Reverse Proxy
 
@@ -387,7 +393,7 @@ https://spring.io/projects/spring-cloud-gateway
 
 https://spring.io/guides/gs/gateway/ 
 
-https://spring.io/blog/2019/06/18/getting-started-with-spring-cloud-gateway
+
 
 
 ## Cloud configuration
