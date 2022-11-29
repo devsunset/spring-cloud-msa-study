@@ -11,8 +11,22 @@ eureka:
 spring:
   application:
     name: gateway-service
+    
+###  url IP:PORT 직접 지정 방식 - 확장에 제약 
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: user-service
+#          uri: http://localhost:64412 # 포워딩할 주소, http://localhost:8000/user 로 들어오면 http://localhost:64412 로 포워딩
+#          predicates:
+#            - Path=/user/**           # 해당 gateway 서버의 /user/**로 들어오는 요은 user-service로 인식하겠다는 조건
+#
+#        - id: order-service
+#          uri: http://localhost:54412 # 포워딩 할 주소, http://localhost:8000/order 로 들어오면 http://localhost:54412 로 포워딩
+#          predicates:
+#            - Path=/order/**          # 해당 gateway 서버의 /order/**로 들어오는 요은 order-service로 인식하겠다는 조건    
  
- # Eureka Server 에서 각각 인스턴스 정보를 받아 로드밸런싱 하기
+ ### Eureka Server 에서 각각 인스턴스 정보를 받아 로드밸런싱 하기
   cloud:
     gateway:
       routes:
@@ -25,19 +39,127 @@ spring:
           predicates:
             - Path=/order/**   
  
+            
+### yml shortcut으로 Route Predicate 조작하기
 
-#  url IP:PORT 직접 지정 방식 - 확장에 제약 
+## After & Before & Between
 #  cloud:
 #    gateway:
 #      routes:
 #        - id: user-service
-#          uri: http://localhost:64412 # 포워딩할 주소, http://localhost:8000/user 로 들어오면 http://localhost:64412 로 포워딩
+#          uri: lb://USER-SERVICE
 #          predicates:
-#            - Path=/user/**           # 해당 gateway 서버의 /user/**로 들어오는 요은 user-service로 인식하겠다는 조건
+#            - Path=/user/**
+#            - After=2022-11-28T17:42:47.789-07:00 # 해당 날짜 이후에 서비스 정상 처리 
 #
 #        - id: order-service
-#          uri: http://localhost:54412 # 포워딩 할 주소, http://localhost:8000/order 로 들어오면 http://localhost:54412 로 포워딩
+#          uri: lb://ORDER-SERVICE
 #          predicates:
-#            - Path=/order/**          # 해당 gateway 서버의 /order/**로 들어오는 요은 order-service로 인식하겠다는 조건
-            
+#            - Path=/order/**
+#            - Before=2023-11-28T17:42:47.789-07:00 # 해당 날짜 이전에 서비스 정상 처리 
+
+## cookie
+#	cloud:
+#	    gateway:
+#	      routes:
+#	        - id: user-service
+#	          uri: lb://USER-SERVICE
+#	          predicates:
+#	            - Path=/user/**
+#	            - Cookie=valid, kakao # valid 값이 kakao면 정상 처리 
+#	
+#	        - id: order-service
+#	          uri: lb://ORDER-SERVICE
+#	          predicates:
+#	            - Path=/order/**
+#	            - Cookie=valid, naver # valid 값이 naver면 정상 처리 
+
+
+## Method
+#	  cloud:
+#	    gateway:
+#	      routes:
+#	        - id: user-service
+#	          uri: lb://USER-SERVICE
+#	          predicates:
+#	            - Path=/user/**
+#	            - Method=GET          # GET 요청만 처리 
+#	
+#	        - id: order-service
+#	          uri: lb://ORDER-SERVICE
+#	          predicates:
+#	            - Path=/order/**
+#	            - Method=POST         # POST 요청만 처리 
+
+
+### yml shortcut으로 Route Filters 조작하기
+
+## AddRequestHeader, AddResponseHeader (RemoveRequestHeader과 RemoveResponseHeader 도 사용 가능)
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: user-service
+#          uri: lb://USER-SERVICE
+#          predicates:
+#            - Path=/user/**
+#          filters:                                   #UserServiceApplication @GetMapping("/user/auth") 메소드 참조  
+#            - AddRequestHeader=token, 123456         # request header에 값 추가 
+#            - AddResponseHeader=authenticated, yes   # response header에 값 추가 
+
+
+## AddRequestParameter
+#   cloud:
+#    gateway:
+#      routes:
+#        - id: add_request_parameter_route
+#          uri: https://example.org
+#          filters:
+#            - AddRequestParameter=red, blue          # parameter 추가 
+
+
+##  RewritePath
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: user-service
+#          uri: lb://USER-SERVICE
+#          predicates:
+#            - Path=/user/**
+#          filters:
+#            - RewritePath=/user/?(?<segment>.*), /$\{segment}  # /user/ 경로를 없앰
+#
+#        - id: order-service
+#          uri: lb://ORDER-SERVICE
+#          predicates:
+#            - Path=/order/**
+#          filters:
+#            - RewritePath=/order/?(?<segment>.*), /$\{segment} # /order/ 경로를 없앰
+
+
+### application.yml에 우리가 정의한 CustomFilter 등록하기 - CustomAuthFilter.java 파일 참조 
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: user-service
+#          uri: lb://USER-SERVICE
+#          predicates:
+#            - Path=/user/**
+#          filters:
+#            - RewritePath=/user/?(?<segment>.*), /$\{segment}
+#            - CustomAuthFilter
+#
+#        - id: order-service
+#          uri: lb://ORDER-SERVICE
+#          predicates:
+#            - Path=/order/**
+#          filters:
+#            - RewritePath=/user/?(?<segment>.*), /$\{segment}
+
+
+
+
+
+
+
+
    
