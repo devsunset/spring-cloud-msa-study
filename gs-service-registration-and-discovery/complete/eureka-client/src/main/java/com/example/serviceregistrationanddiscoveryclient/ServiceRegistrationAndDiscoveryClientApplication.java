@@ -31,3 +31,4 @@ class ServiceInstanceRestController {
 		return this.discoveryClient.getInstances(applicationName);
 	}
 }
+//http://localhost:8080/service-instances/a-bootiful-client
