@@ -13,11 +13,9 @@ spring-cloud-msa-work - Spring Cloud(MSA) Tutorials
 - https://12factor.net/
 - https://12factor.net/ko/
 - https://www.samsungsds.com/kr/insights/spring_cloud.html
-
+- https://wonit.tistory.com/category/%F0%9F%92%8A%20Java/-%20Spring%20Cloud%20for%20MSA
 - https://happycloud-lee.tistory.com/207  ~ /221
 - https://github.com/sc-hklee
-- https://wonit.tistory.com/category/%F0%9F%92%8A%20Java/-%20Spring%20Cloud%20for%20MSA
-
 # ####################################################################
 
 # Micro Service Architecture
@@ -361,7 +359,7 @@ https://spring.io/projects/spring-cloud-kubernetes
 
 https://spring.io/guides/gs/spring-cloud-loadbalancer/
 
-example
+* example
 
 https://spring.io/guides/gs/service-registration-and-discovery/
 
