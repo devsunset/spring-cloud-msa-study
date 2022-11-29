@@ -391,6 +391,8 @@ https://spring.io/projects/spring-cloud-gateway
 https://spring.io/guides/gs/gateway/ 
 
 https://wonit.tistory.com/497
+https://wonit.tistory.com/499
+https://wonit.tistory.com/500
 
 ## Cloud configuration
 - 모든 Application의 환경 설정 정보를 한 곳에서 관리
