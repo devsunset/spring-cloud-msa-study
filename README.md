@@ -392,6 +392,7 @@ https://spring.io/guides/gs/gateway/
 
 gs-gateway
 
+https://wonit.tistory.com/497
 
 ## Cloud configuration
 - 모든 Application의 환경 설정 정보를 한 곳에서 관리

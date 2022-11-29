@@ -1,0 +1,16 @@
+server:
+  port: 54412
+
+spring:
+  application:
+    name: order-service
+
+eureka:
+  instance:
+    instance-id: order-microservice-instance    # 유레카가 인식할 instance id 인데 대쉬보드에서 식별하는 용도로 사용된다.
+
+  client:
+    register-with-eureka: true                  # 해당 서비스가 클라이언트로 인식되어야 하므로 true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka # eureka server 가 위치하고 있는 기본 주소 defaultZone 같은 경우는 꼭 Camel Case 로 작성
