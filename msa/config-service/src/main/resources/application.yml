@@ -19,7 +19,7 @@ spring:
     config:
       server:
         native:
-          search-locations: /workspace/devwork/spring-cloud-msa-work/msa/config
+          search-locations: /workspace/devwork/spring-cloud-msa-work/msa/local-msa-config
          
          
 #  git이 Default로 많이 사용됨          
