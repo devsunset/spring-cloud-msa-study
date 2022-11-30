@@ -401,6 +401,8 @@ https://wonit.tistory.com/500
 - 환경설정 파일을 한 곳에 저장, 해당 서버에 접근하여 환경 설정 정보를 가져옴
 - 환경 설정이 변경되어도 전체를 다시 빌드하지 않아도 됨
 
+https://docs.spring.io/spring-cloud-config/docs/3.1.5/reference/html/
+
 https://spring.io/projects/spring-cloud-config
 
 [example]
