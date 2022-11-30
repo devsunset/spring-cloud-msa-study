@@ -1,13 +1,13 @@
-spring:
-  datasource:
-    driver: com.h2.Driver
-    url: dbUrl
-    username: admin
-    password: admin
+# spring:
+#   datasource:
+#     driver: com.h2.Driver
+#     url: dbUrl
+#     username: admin
+#     password: admin
 
 token:
   key: "{cipher}5202377763cbdbc6cfbc7ecc5105d8b2b1b4af3f28ca713cb84e675e0729adcf82152462ce8276a32976da4a666017e6"
   # key: jwt_token_encrypt_value
 
-default:
-  message: user-service 에서 global profiles 에서 사용할 설정 정보들
+# default:
+#   message: user-service 에서 global profiles 에서 사용할 설정 정보들
