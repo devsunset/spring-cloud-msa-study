@@ -2,8 +2,8 @@ spring:
   datasource:
     driver: com.h2.Driver
     url: dbUrl
-    username: admin
-    password: admin
+    username: admin_refresh
+    password: admin_refresh
 
 token:
   key: "{cipher}5202377763cbdbc6cfbc7ecc5105d8b2b1b4af3f28ca713cb84e675e0729adcf82152462ce8276a32976da4a666017e6"
