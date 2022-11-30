@@ -409,6 +409,8 @@ https://spring.io/projects/spring-cloud-config
 
 https://spring.io/guides/gs/centralized-configuration/
 
+https://wonit.tistory.com/502
+
 
 ## Circuit breakers
 - MSA에서 특정 MSA 서비스 장애로 인해 다른 MSA 서비스에도 장애를 일으킬 수 있는 가능성을 방지하는 것

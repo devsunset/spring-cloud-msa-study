@@ -1,0 +1,33 @@
+
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-service
+
+  profiles:
+    active: native
+
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations: file://${user.home}/외부-설정-파일-경로
+          
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: /workspace/devwork/spring-cloud-msa-work/msa/config
+         
+         
+#  git이 Default로 많이 사용됨          
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri:    
+
+
+ 
