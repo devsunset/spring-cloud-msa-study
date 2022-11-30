@@ -1,3 +1,4 @@
+# local-msa-config 테스트시 주석 해제 
 #spring:
 #  cloud:
 #    config:

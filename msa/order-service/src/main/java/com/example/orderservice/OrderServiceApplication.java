@@ -21,6 +21,7 @@ public class OrderServiceApplication {
         return "Order 서비스의 기본 동작 Port: {" + port + "}";
     }
 
+//    # local-msa-config 테스트시 주석 해제 
 //    @GetMapping("/info") - yaml 설정 RewritePath=/order/?(?<segment>.*), /$\{segment} # /order/ 경로를 없앰
 //    public String info(@Value("${server.port}") String port) {
 //        return "Order 서비스의 기본 동작 Port: {" + port + "}";

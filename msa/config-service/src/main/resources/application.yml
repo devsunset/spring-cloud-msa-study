@@ -9,7 +9,7 @@ spring:
 #  profiles:
 #    active: native
 
-# local file 연결             
+# local file 연결 - # local-msa-config 테스트시 주석 해제             
 #  cloud:
 #    config:
 #      server:

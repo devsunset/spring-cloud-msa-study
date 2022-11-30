@@ -32,6 +32,7 @@ public class UserServiceApplication {
         return "token is " + token;
     }
     
+//    # local-msa-config 테스트시 주석 해제 
 //    @GetMapping("/user/config")
 //    public String string(@Value("${message.owner}") String messageOwner,
 //                         @Value("${message.content}") String messageContent) {
