@@ -26,10 +26,11 @@ public class OrderServiceApplication {
 //        return "Order 서비스의 기본 동작 Port: {" + port + "}";
 //    }
     
-    @GetMapping("/order/config")
-    public String string(@Value("${message.owner}") String messageOwner,
-                         @Value("${message.content}") String messageContent) {
-        return "Configuration File's Message Owner: " + messageOwner + "\n"
-                + "Configuration File's Message Content: " + messageContent;
-    }
+//    @GetMapping("/order/config")
+//    public String string(@Value("${message.owner}") String messageOwner,
+//                         @Value("${message.content}") String messageContent) {
+//        return "Configuration File's Message Owner: " + messageOwner + "\n"
+//                + "Configuration File's Message Content: " + messageContent;
+//    }
+
 }

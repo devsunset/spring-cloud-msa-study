@@ -32,11 +32,25 @@ public class UserServiceApplication {
         return "token is " + token;
     }
     
-    @GetMapping("/user/config")
-    public String string(@Value("${message.owner}") String messageOwner,
-                         @Value("${message.content}") String messageContent) {
-        return "Configuration File's Message Owner: " + messageOwner + "\n"
-                + "Configuration File's Message Content: " + messageContent;
+//    @GetMapping("/user/config")
+//    public String string(@Value("${message.owner}") String messageOwner,
+//                         @Value("${message.content}") String messageContent) {
+//        return "Configuration File's Message Owner: " + messageOwner + "\n"
+//                + "Configuration File's Message Content: " + messageContent;
+//    }
+    
+    
+    @GetMapping("/user/config/database")
+    public String database(@Value("${spring.datasource.driver}") String driver,
+                           @Value("${spring.datasource.url}") String url,
+                           @Value("${spring.datasource.username}") String username,
+                           @Value("${spring.datasource.password}") String password,
+                           @Value("${token.key}") String tokenKey) {
+        return "driver: " + driver + "\n"
+                + "url: " + url + "\n"
+                + "username: " + username + "\n"
+                + "password: " + password + "\n\n"
+                + "token key: " + tokenKey;
     }
 
 
