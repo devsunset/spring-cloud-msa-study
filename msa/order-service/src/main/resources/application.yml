@@ -1,18 +1,9 @@
 server:
   port: 54412
   
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health, beans, refresh   
-
 spring:
   application:
     name: order-service
-    
-  config:
-    import: configserver:http://localhost:8888/
 
 eureka:
   instance:
