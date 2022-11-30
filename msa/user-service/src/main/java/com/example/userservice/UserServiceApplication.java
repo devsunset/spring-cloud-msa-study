@@ -41,10 +41,6 @@ public class UserServiceApplication {
 //                + "Configuration File's Message Content: " + messageContent;
 //    }
     
-    
-  
-
-
 }
 
 @RefreshScope
