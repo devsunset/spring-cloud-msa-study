@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
@@ -42,6 +43,7 @@ public class UserServiceApplication {
     
     
     @GetMapping("/user/config/database")
+    @RefreshScope
     public String database(@Value("${spring.datasource.driver}") String driver,
                            @Value("${spring.datasource.url}") String url,
                            @Value("${spring.datasource.username}") String username,
