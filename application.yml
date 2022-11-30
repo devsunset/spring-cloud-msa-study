@@ -1,3 +1,14 @@
 default:
-  owner: config-service's git folder
-  content: :) 안녕하세요 각각의 마이크로서비스에서 사용될 데이터입니다. :)
+  owner: config-service
+  content: spring cloud global config-service 
+
+spring:
+  datasource:
+    driver: com.h2.Driver
+    url: dbUrl
+    username: admin
+    password: admin
+
+token:
+  key: "{cipher}5202377763cbdbc6cfbc7ecc5105d8b2b1b4af3f28ca713cb84e675e0729adcf82152462ce8276a32976da4a666017e6"
+  # key: jwt_token_value
