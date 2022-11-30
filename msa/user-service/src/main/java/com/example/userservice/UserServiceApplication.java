@@ -45,18 +45,23 @@ public class UserServiceApplication {
 
 @RefreshScope
 @RestController
-class MessageRestController {
+class ConfigRestController {
 
-	  @GetMapping("/user/config/database")
-	    public String database(@Value("${spring.datasource.driver}") String driver,
-	                           @Value("${spring.datasource.url}") String url,
-	                           @Value("${spring.datasource.username}") String username,
-	                           @Value("${spring.datasource.password}") String password,
-	                           @Value("${token.key}") String tokenKey) {
-	        return "driver: " + driver + "\n"
-	                + "url: " + url + "\n"
-	                + "username: " + username + "\n"
-	                + "password: " + password + "\n\n"
-	                + "token key: " + tokenKey;
-	    }
+    @GetMapping("/user/config/database")
+    public String database(@Value("${spring.datasource.driver}") String driver,
+                           @Value("${spring.datasource.url}") String url,
+                           @Value("${spring.datasource.username}") String username,
+                           @Value("${spring.datasource.password}") String password,
+                           @Value("${token.key}") String tokenKey) {
+        return "driver: " + driver + "\n"
+                + "url: " + url + "\n"
+                + "username: " + username + "\n"
+                + "password: " + password + "\n\n"
+                + "token key: " + tokenKey;
+    }
+    
+    @GetMapping("/user/staticuser")
+    public String staticuser() {
+        return "username: abcd , password:1234"; 
+    }
 }

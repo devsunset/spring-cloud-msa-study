@@ -417,6 +417,15 @@ https://wonit.tistory.com/504
 
 https://wonit.tistory.com/505
 
+## Cloud moudule api call
+- 마이크로서비스에서 서비스간 통신을 위한 2가지 방법 [OpenFeign vs Rest Template]
+
+[example]
+
+https://wonit.tistory.com/506
+
+https://wonit.tistory.com/507
+
 ## Circuit breakers
 - MSA에서 특정 MSA 서비스 장애로 인해 다른 MSA 서비스에도 장애를 일으킬 수 있는 가능성을 방지하는 것
 - Software 기반 Circuit Breaker, 장애 상황을 견딜 수 있도록 해주는 Spring Cloud component

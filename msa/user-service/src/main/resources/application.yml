@@ -1,5 +1,5 @@
 server:
-  port: 64412
+  port: 8001
   
 #management:
 #  endpoints:
