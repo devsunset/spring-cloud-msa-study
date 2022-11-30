@@ -417,6 +417,8 @@ https://wonit.tistory.com/504
 
 https://wonit.tistory.com/505
 
+https://wonit.tistory.com/512
+
 ## Cloud moudule api call
 - 마이크로서비스에서 서비스간 통신을 위한 2가지 방법 [OpenFeign vs Rest Template]
 
