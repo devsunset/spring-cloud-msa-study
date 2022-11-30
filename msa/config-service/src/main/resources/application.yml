@@ -6,28 +6,24 @@ spring:
   application:
     name: config-service
 
-  profiles:
-    active: native
+#  profiles:
+#    active: native
 
+# local file 연결             
 #  cloud:
 #    config:
 #      server:
 #        native:
-#          search-locations: file://${user.home}/외부-설정-파일-경로
-          
+#          search-locations: /workspace/devwork/spring-cloud-msa-work/msa/local-msa-config  # file://${user.home}/외부-설정-파일-경로
+         
+#  git 저장소 연결   
   cloud:
     config:
       server:
-        native:
-          search-locations: /workspace/devwork/spring-cloud-msa-work/msa/local-msa-config
-         
-         
-#  git이 Default로 많이 사용됨          
-#  cloud:
-#    config:
-#      server:
-#        git:
-#          uri:    
+        git:
+          uri: https://github.com/devsunset/spring-cloud-msa-work
+#          username: 
+#          password: 
 
 
  
