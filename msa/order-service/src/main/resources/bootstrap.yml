@@ -6,8 +6,3 @@ spring:
 #      name: message
 #      profile: native
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"

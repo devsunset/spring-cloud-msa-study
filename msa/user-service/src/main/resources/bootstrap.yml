@@ -5,9 +5,3 @@ spring:
 # local-msa-config 테스트시 주석 해제       
 #      name: message
 #      profile: native
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"

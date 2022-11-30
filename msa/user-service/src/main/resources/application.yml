@@ -1,6 +1,12 @@
 server:
   port: 64412
   
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, beans, refresh   
+  
 spring:
   application:
     name: user-service
