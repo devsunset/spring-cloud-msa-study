@@ -6,12 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @EnableDiscoveryClient
 @RestController
+@RefreshScope
 public class UserServiceApplication {
 
     public static void main(String[] args) {
@@ -28,10 +28,6 @@ public class UserServiceApplication {
 //      return "User 서비스의 기본 동작 Port: {" + port + "}";
 //  }
 
-    @GetMapping("/user/auth")
-    public String auth(@RequestHeader(value = "token") String token) {
-        return "token is " + token;
-    }
     
 //    # local-msa-config 테스트시 주석 해제 
 //    @GetMapping("/user/config")
@@ -41,22 +37,21 @@ public class UserServiceApplication {
 //                + "Configuration File's Message Content: " + messageContent;
 //    }
     
-}
-
-@RefreshScope
-@RestController
-class ConfigRestController {
-
-    @GetMapping("/user/config/database")
-    public String database(@Value("${spring.datasource.driver}") String driver,
+    @GetMapping("/user/config/git")
+    public String gitconfig(@Value("${spring.datasource.driver}") String driver,
                            @Value("${spring.datasource.url}") String url,
                            @Value("${spring.datasource.username}") String username,
                            @Value("${spring.datasource.password}") String password,
-                           @Value("${token.key}") String tokenKey) {
-        return "driver: " + driver + "\n"
-                + "url: " + url + "\n"
-                + "username: " + username + "\n"
-                + "password: " + password + "\n\n"
-                + "token key: " + tokenKey;
+                           @Value("${token.key}") String tokenKey,
+                           @Value("${default.content}") String content,
+                           @Value("${default.message}") String message) {
+        return "driver: " + driver + "<p/>"
+                + "url: " + url + "<p/>"
+                + "username: " + username + "<p/>"
+                + "password: " + password + "<p/>"
+                + "token key: " + tokenKey + "<p/>"
+                + "content: " + content + "<p/>"
+                + "message: " + message;
     }
+    
 }
