@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableDiscoveryClient
 @RestController
-@RefreshScope
 public class UserServiceApplication {
 
     public static void main(String[] args) {
@@ -43,18 +42,25 @@ public class UserServiceApplication {
 //    }
     
     
-    @GetMapping("/user/config/database")
-    public String database(@Value("${spring.datasource.driver}") String driver,
-                           @Value("${spring.datasource.url}") String url,
-                           @Value("${spring.datasource.username}") String username,
-                           @Value("${spring.datasource.password}") String password,
-                           @Value("${token.key}") String tokenKey) {
-        return "driver: " + driver + "\n"
-                + "url: " + url + "\n"
-                + "username: " + username + "\n"
-                + "password: " + password + "\n\n"
-                + "token key: " + tokenKey;
-    }
+  
 
 
+}
+
+@RefreshScope
+@RestController
+class MessageRestController {
+
+	  @GetMapping("/user/config/database")
+	    public String database(@Value("${spring.datasource.driver}") String driver,
+	                           @Value("${spring.datasource.url}") String url,
+	                           @Value("${spring.datasource.username}") String username,
+	                           @Value("${spring.datasource.password}") String password,
+	                           @Value("${token.key}") String tokenKey) {
+	        return "driver: " + driver + "\n"
+	                + "url: " + url + "\n"
+	                + "username: " + username + "\n"
+	                + "password: " + password + "\n\n"
+	                + "token key: " + tokenKey;
+	    }
 }
