@@ -1,5 +1,5 @@
-encrypt:
-  key: my_symmetric_key
+#encrypt:
+#  key: my_symmetric_key
   
 #암호화 : http://config-server.com/encrypt POST
 #복호화 : http://config-server.com/decrypt POST
