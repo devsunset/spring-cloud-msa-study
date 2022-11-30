@@ -59,9 +59,4 @@ class ConfigRestController {
                 + "password: " + password + "\n\n"
                 + "token key: " + tokenKey;
     }
-    
-    @GetMapping("/user/staticuser")
-    public String staticuser() {
-        return "username: abcd , password:1234"; 
-    }
 }
