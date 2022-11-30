@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableDiscoveryClient
 @RestController
+@RefreshScope
 public class UserServiceApplication {
 
     public static void main(String[] args) {
@@ -43,7 +44,6 @@ public class UserServiceApplication {
     
     
     @GetMapping("/user/config/database")
-    @RefreshScope
     public String database(@Value("${spring.datasource.driver}") String driver,
                            @Value("${spring.datasource.url}") String url,
                            @Value("${spring.datasource.username}") String username,
