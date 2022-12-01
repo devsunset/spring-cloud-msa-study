@@ -3,6 +3,9 @@ default:
   content: spring cloud test config-service 
 
 spring:
+  profiles:
+    active: test 
+
   datasource:
     driver: com.h2.Driver
     url: dbUrl
