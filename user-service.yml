@@ -14,7 +14,6 @@ default:
 
 token:
   key: "default_jwt_token_value"
-  # key: jwt_token_value
 
 ---
 
