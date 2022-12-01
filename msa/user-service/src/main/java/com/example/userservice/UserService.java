@@ -4,6 +4,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example.userservice.domain.User;
+import com.example.userservice.domain.UserRepository;
 import com.example.userservice.domain.dto.UserCreateData;
 import com.example.userservice.domain.dto.UserResponseData;
 
