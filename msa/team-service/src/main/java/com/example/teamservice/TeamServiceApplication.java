@@ -37,16 +37,8 @@ public class TeamServiceApplication {
 //    }
     
     @GetMapping("/team/config/git")
-    public String gitconfig(@Value("${default.content}") String content,
-						    @Value("${spring.datasource.driver}") String driver,
-				            @Value("${spring.datasource.url}") String url,
-				            @Value("${spring.datasource.username}") String username,
-				            @Value("${spring.datasource.password}") String password) {
-        return  "content: " + content + "<p/>"
-        		+ "driver: " + driver + "<p/>"
-                + "url: " + url + "<p/>"
-                + "username: " + username + "<p/>"
-                + "password: " + password + "<p/>";
+    public String gitconfig(@Value("${default.content}") String content) {
+        return  "content: " + content + "<p/>";
     }
 
 }
