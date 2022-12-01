@@ -3,8 +3,7 @@ default:
   content: spring cloud test config-service 
 
 spring:
-  profiles:
-    active: test 
+  profiles: test
 
   datasource:
     driver: com.h2.Driver
