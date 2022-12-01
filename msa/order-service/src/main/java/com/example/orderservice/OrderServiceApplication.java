@@ -37,12 +37,12 @@ public class OrderServiceApplication {
 //    }
     
     @GetMapping("/order/config/git")
-    public String gitconfig(@Value("${spring.datasource.driver}") String driver,
-                           @Value("${spring.datasource.url}") String url,
-                           @Value("${spring.datasource.username}") String username,
-                           @Value("${spring.datasource.password}") String password,
-                           @Value("${token.key}") String tokenKey,
-                           @Value("${default.content}") String content) {
+    public String gitconfig(@Value("${default.content}") String content,
+						    @Value("${spring.datasource.driver}") String driver,
+				            @Value("${spring.datasource.url}") String url,
+				            @Value("${spring.datasource.username}") String username,
+				            @Value("${spring.datasource.password}") String password,
+				            @Value("${token.key}") String tokenKey) {
         return  "content: " + content + "<p/>"
         		+ "driver: " + driver + "<p/>"
                 + "url: " + url + "<p/>"

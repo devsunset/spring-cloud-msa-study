@@ -38,12 +38,12 @@ public class UserServiceApplication {
 //    }
     
     @GetMapping("/user/config/git")
-    public String gitconfig(@Value("${spring.datasource.driver}") String driver,
+    public String gitconfig(@Value("${default.content}") String content,
+    					   @Value("${spring.datasource.driver}") String driver,
                            @Value("${spring.datasource.url}") String url,
                            @Value("${spring.datasource.username}") String username,
                            @Value("${spring.datasource.password}") String password,
                            @Value("${token.key}") String tokenKey,
-                           @Value("${default.content}") String content,
                            @Value("${default.message}") String message) {
         return  "content: " + content + "<p/>"
         		+ "driver: " + driver + "<p/>"
