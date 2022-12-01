@@ -1,3 +1,14 @@
+spring:
+  config:
+    activate:
+      on-profile: default
+
+  datasource:
+    driver: com.h2.Driver
+    url: dbUrl
+    username: admin
+    password: admin
+
 default:
   message: user-service 에서 default profiles 에서 사용할 설정 정보
 
@@ -12,6 +23,12 @@ spring:
     activate:
       on-profile: dev
 
+  datasource:
+    driver: com.h2.Driver
+    url: dbUrl
+    username: dev
+    password: dev
+
 default:
   message: user-service 에서 dev profiles 에서 사용할 설정 정보
 
@@ -24,6 +41,12 @@ spring:
   config:
     activate:
       on-profile: test
+
+  datasource:
+    driver: com.h2.Driver
+    url: dbUrl
+    username: test
+    password: test
 
 
 default:
@@ -38,6 +61,12 @@ spring:
   config:
     activate:
       on-profile: prod
+
+  datasource:
+    driver: com.h2.Driver
+    url: dbUrl
+    username: prod
+    password: prod
 
 default:
   message: user-service 에서 prod profiles 에서 사용할 설정 정보

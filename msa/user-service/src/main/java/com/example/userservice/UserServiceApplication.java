@@ -45,12 +45,12 @@ public class UserServiceApplication {
                            @Value("${token.key}") String tokenKey,
                            @Value("${default.content}") String content,
                            @Value("${default.message}") String message) {
-        return "driver: " + driver + "<p/>"
+        return  "content: " + content + "<p/>"
+        		+ "driver: " + driver + "<p/>"
                 + "url: " + url + "<p/>"
                 + "username: " + username + "<p/>"
                 + "password: " + password + "<p/>"
                 + "token key: " + tokenKey + "<p/>"
-                + "content: " + content + "<p/>"
                 + "message: " + message;
     }
     

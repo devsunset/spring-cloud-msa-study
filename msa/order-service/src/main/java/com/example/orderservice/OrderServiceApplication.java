@@ -41,12 +41,14 @@ public class OrderServiceApplication {
                            @Value("${spring.datasource.url}") String url,
                            @Value("${spring.datasource.username}") String username,
                            @Value("${spring.datasource.password}") String password,
+                           @Value("${token.key}") String tokenKey,
                            @Value("${default.content}") String content) {
-        return "driver: " + driver + "<p/>"
+        return  "content: " + content + "<p/>"
+        		+ "driver: " + driver + "<p/>"
                 + "url: " + url + "<p/>"
                 + "username: " + username + "<p/>"
                 + "password: " + password + "<p/>"
-                + "content: " + content;
+                + "token key: " + tokenKey + "<p/>";
     }
 
 }
