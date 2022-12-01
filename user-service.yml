@@ -1,8 +1,7 @@
 spring:
-  cloud:
-    config:
-      activate:
-        on-profile: default
+  config:
+    activate:
+      on-profile: default
 
   datasource:
     driver: com.h2.Driver
@@ -19,10 +18,9 @@ token:
 ---
 
 spring:
-  cloud:
-    config:
-      activate:
-        on-profile: dev
+  config:
+    activate:
+      on-profile: dev
 
   datasource:
     driver: com.h2.Driver
@@ -39,10 +37,9 @@ token:
 ---
 
 spring:
-  cloud:
-    config:
-      activate:
-        on-profile: test
+  config:
+    activate:
+      on-profile: test
 
   datasource:
     driver: com.h2.Driver
@@ -60,10 +57,9 @@ token:
 ---
 
 spring:
-  cloud:
-    config:
-      activate:
-        on-profile: prod
+  config:
+    activate:
+      on-profile: prod
 
   datasource:
     driver: com.h2.Driver
