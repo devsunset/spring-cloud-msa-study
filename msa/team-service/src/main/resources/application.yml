@@ -11,9 +11,13 @@ spring:
   application:
     name: team-service
   datasource:
+    type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:h2:mem:userdb
+    driver-class-name: org.h2.Driver
     username: sa
     password:
+    hikari:
+      idle-timeout: 10000
   h2:
     console:
       enabled: true
