@@ -424,6 +424,8 @@ https://wonit.tistory.com/512
 
 [example]
 
+https://spring.io/projects/spring-cloud-openfeign
+
 https://wonit.tistory.com/506
 
 https://wonit.tistory.com/507
