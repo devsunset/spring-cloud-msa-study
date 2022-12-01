@@ -41,14 +41,12 @@ public class TeamServiceApplication {
 						    @Value("${spring.datasource.driver}") String driver,
 				            @Value("${spring.datasource.url}") String url,
 				            @Value("${spring.datasource.username}") String username,
-				            @Value("${spring.datasource.password}") String password,
-				            @Value("${token.key}") String tokenKey) {
+				            @Value("${spring.datasource.password}") String password) {
         return  "content: " + content + "<p/>"
         		+ "driver: " + driver + "<p/>"
                 + "url: " + url + "<p/>"
                 + "username: " + username + "<p/>"
-                + "password: " + password + "<p/>"
-                + "token key: " + tokenKey + "<p/>";
+                + "password: " + password + "<p/>";
     }
 
 }
