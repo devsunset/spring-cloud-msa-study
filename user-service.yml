@@ -8,7 +8,9 @@ token:
 ---
 
 spring:
-  profiles: dev
+  config:
+    activate:
+      on-profile: dev
 
 default:
   message: user-service 에서 dev profiles 에서 사용할 설정 정보
@@ -19,7 +21,9 @@ token:
 ---
 
 spring:
-  profiles: test
+  config:
+    activate:
+      on-profile: test
 
 
 default:
@@ -31,7 +35,9 @@ token:
 ---
 
 spring:
-  profiles: prod
+  config:
+    activate:
+      on-profile: prod
 
 default:
   message: user-service 에서 prod profiles 에서 사용할 설정 정보
