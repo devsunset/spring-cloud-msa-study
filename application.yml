@@ -1,3 +1,11 @@
 default:
   content: spring cloud global config-service 
 
+
+spring:
+  datasource:
+    driver: com.h2.Driver
+    url: dbUrl
+    username: dev123
+    password: dev123
+

@@ -44,6 +44,7 @@ public class UserServiceApplication {
                            @Value("${spring.datasource.username}") String username,
                            @Value("${spring.datasource.password}") String password,
                            @Value("${token.key}") String tokenKey,
+                           @Value("${default.global-message}") String globalmessage,
                            @Value("${default.message}") String message) {
         return  "content: " + content + "<p/>"
         		+ "driver: " + driver + "<p/>"
@@ -51,6 +52,7 @@ public class UserServiceApplication {
                 + "username: " + username + "<p/>"
                 + "password: " + password + "<p/>"
                 + "token key: " + tokenKey + "<p/>"
+                + "global message: " + globalmessage + "<p/>"
                 + "message: " + message;
     }
     

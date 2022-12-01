@@ -27,10 +27,10 @@ spring:
 #          predicates:
 #            - Path=/user/**           # 해당 gateway 서버의 /user/**로 들어오는 요은 user-service로 인식하겠다는 조건
 #
-#        - id: order-service
-#          uri: http://localhost:8002 # 포워딩 할 주소, http://localhost:8000/order 로 들어오면 http://localhost:8002 로 포워딩
+#        - id: team-service
+#          uri: http://localhost:8002 # 포워딩 할 주소, http://localhost:8000/team 로 들어오면 http://localhost:8002 로 포워딩
 #          predicates:
-#            - Path=/order/**          # 해당 gateway 서버의 /order/**로 들어오는 요은 order-service로 인식하겠다는 조건    
+#            - Path=/team/**          # 해당 gateway 서버의 /team/**로 들어오는 요은 team-service로 인식하겠다는 조건    
  
  ### Eureka Server 에서 각각 인스턴스 정보를 받아 로드밸런싱 하기
   cloud:
@@ -40,10 +40,10 @@ spring:
           uri: lb://USER-SERVICE
           predicates:
             - Path=/user/**
-        - id: order-service
-          uri: lb://ORDER-SERVICE
+        - id: team-service
+          uri: lb://TEAM-SERVICE
           predicates:
-            - Path=/order/**   
+            - Path=/team/**   
  
             
 ### yml shortcut으로 Route Predicate 조작하기
@@ -58,10 +58,10 @@ spring:
 #            - Path=/user/**
 #            - After=2022-11-28T17:42:47.789-07:00 # 해당 날짜 이후에 서비스 정상 처리 
 #
-#        - id: order-service
-#          uri: lb://ORDER-SERVICE
+#        - id: team-service
+#          uri: lb://TEAM-SERVICE
 #          predicates:
-#            - Path=/order/**
+#            - Path=/team/**
 #            - Before=2023-11-28T17:42:47.789-07:00 # 해당 날짜 이전에 서비스 정상 처리 
 
 ## cookie
@@ -74,10 +74,10 @@ spring:
 #	            - Path=/user/**
 #	            - Cookie=valid, kakao # valid 값이 kakao면 정상 처리 
 #	
-#	        - id: order-service
-#	          uri: lb://ORDER-SERVICE
+#	        - id: team-service
+#	          uri: lb://TEAM-SERVICE
 #	          predicates:
-#	            - Path=/order/**
+#	            - Path=/team/**
 #	            - Cookie=valid, naver # valid 값이 naver면 정상 처리 
 
 
@@ -91,10 +91,10 @@ spring:
 #	            - Path=/user/**
 #	            - Method=GET          # GET 요청만 처리 
 #	
-#	        - id: order-service
-#	          uri: lb://ORDER-SERVICE
+#	        - id: team-service
+#	          uri: lb://TEAM-SERVICE
 #	          predicates:
-#	            - Path=/order/**
+#	            - Path=/team/**
 #	            - Method=POST         # POST 요청만 처리 
 
 
@@ -134,12 +134,12 @@ spring:
 #          filters:
 #            - RewritePath=/user/?(?<segment>.*), /$\{segment}  # /user/ 경로를 없앰
 #
-#        - id: order-service
-#          uri: lb://ORDER-SERVICE
+#        - id: team-service
+#          uri: lb://TEAM-SERVICE
 #          predicates:
-#            - Path=/order/**
+#            - Path=/team/**
 #          filters:
-#            - RewritePath=/order/?(?<segment>.*), /$\{segment} # /order/ 경로를 없앰
+#            - RewritePath=/team/?(?<segment>.*), /$\{segment} # /team/ 경로를 없앰
 
 
 ### application.yml에 우리가 정의한 CustomFilter 등록하기 - CustomAuthFilter.java 파일 참조 
@@ -154,10 +154,10 @@ spring:
 #            - RewritePath=/user/?(?<segment>.*), /$\{segment}
 #            - CustomAuthFilter
 #
-#        - id: order-service
-#          uri: lb://ORDER-SERVICE
+#        - id: team-service
+#          uri: lb://TEAM-SERVICE
 #          predicates:
-#            - Path=/order/**
+#            - Path=/team/**
 #          filters:
 #            - RewritePath=/user/?(?<segment>.*), /$\{segment}
 
