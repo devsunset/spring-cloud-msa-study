@@ -1,2 +1,40 @@
 default:
-  message: user-service 에서 global profiles 에서 사용할 설정 정보
+  message: user-service 에서 default profiles 에서 사용할 설정 정보
+
+token:
+  key: "default_jwt_token_value"
+  # key: jwt_token_value
+
+---
+
+spring:
+  profiles: dev
+
+default:
+  message: user-service 에서 dev profiles 에서 사용할 설정 정보
+
+token:
+  key: "{cipher}5202377763cbdbc6cfbc7ecc5105d8b2b1b4af3f28ca713cb84e675e0729adcf82152462ce8276a32976da4a666017e6"
+
+---
+
+spring:
+  profiles: test
+
+
+default:
+  message: user-service 에서 test profiles 에서 사용할 설정 정보
+
+token:
+  key: "{cipher}5202377763cbdbc6cfbc7ecc5105d8b2b1b4af3f28ca713cb84e675e0729adcf82152462ce8276a32976da4a666017e6"
+
+---
+
+spring:
+  profiles: prod
+
+default:
+  message: user-service 에서 prod profiles 에서 사용할 설정 정보
+
+token:
+  key: "{cipher}5202377763cbdbc6cfbc7ecc5105d8b2b1b4af3f28ca713cb84e675e0729adcf82152462ce8276a32976da4a666017e6"
