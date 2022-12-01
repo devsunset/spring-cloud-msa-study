@@ -475,7 +475,7 @@ https://spring.io/guides/gs/contract-rest/
 # ####################################################################
 
 
-# start.spring.io (Spring Cloud)
+# start.spring.io
 https://start.spring.io/
 
 # ####################################################################
