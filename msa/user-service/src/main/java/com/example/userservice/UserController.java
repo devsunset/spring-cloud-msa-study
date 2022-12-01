@@ -27,4 +27,15 @@ public class UserController {
     public UserResponseData getUser(@PathVariable("userId") Long id) {
         return userService.getUserById(id);
     }
+    
+    @GetMapping("/user/users/resttemplate/{userId}")
+    public UserResponseData getUserRestTemplate(@PathVariable("userId") Long id) {
+        return userService.getUserByIdRestTemplate(id);
+    }
+    
+    @GetMapping("/user/users/fegin/{userId}")
+    public UserResponseData getUserFegin(@PathVariable("userId") Long id) {
+        return userService.getUserByIdFegin(id);
+    }
+    
 }

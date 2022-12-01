@@ -4,18 +4,40 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.example.userservice.domain.dto.TeamResponseData;
 
 @SpringBootApplication
 @EnableDiscoveryClient
 @RestController
 @RefreshScope
+@EnableFeignClients
 public class UserServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(UserServiceApplication.class, args);
+    }
+    
+    @Bean
+    @LoadBalanced
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
+    
+ // FeignClient 어노테이션을 이용하면 직접 해당 URL을 명시하지 않더라도 Eureka 에 register한 Instance 이름을 찾아서 URL을 매핑
+    @FeignClient(name = "team")
+    public interface TeamServiceClient {
+        @GetMapping("/team/{userId}/teams")
+        TeamResponseData getTeam(@PathVariable("userId") Long id);
     }
 
     @GetMapping("/user/info")

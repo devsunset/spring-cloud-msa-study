@@ -1,6 +1,7 @@
 package com.example.teamservice;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import com.example.teamservice.domain.Team;
 import com.example.teamservice.domain.TeamMember;
@@ -17,10 +18,12 @@ public class TeamService {
 
     private final TeamRepository teamRepository;
     private final TeamMemberRepository teamMemberRepository;
+    private final RestTemplate restTemplate;
 
-    public TeamService(TeamRepository teamRepository, TeamMemberRepository teamMemberRepository) {
+    public TeamService(TeamRepository teamRepository, TeamMemberRepository teamMemberRepository, RestTemplate restTemplate) {
         this.teamRepository = teamRepository;
         this.teamMemberRepository = teamMemberRepository;
+        this.restTemplate = restTemplate;
     }
 
     /**
