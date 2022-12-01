@@ -1,6 +1,10 @@
 spring:
     config:
       import: optional:configserver:http://localhost:8888/
+    cloud:
+      config:
+            name: user-service
+            profile: dev      
 
 # local-msa-config 테스트시 주석 해제     
 #spring:

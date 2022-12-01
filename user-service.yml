@@ -14,7 +14,7 @@ default:
 
 token:
   key: "default_jwt_token_value"
-
+  
 ---
 
 spring:
@@ -25,8 +25,8 @@ spring:
   datasource:
     driver: com.h2.Driver
     url: dbUrl
-    username: dev
-    password: dev
+    username: dev123
+    password: dev123
 
 default:
   message: user-service 에서 dev profiles 에서 사용할 설정 정보
