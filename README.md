@@ -69,6 +69,19 @@ Spring Cloud는 마이크로서비스의 개발, 배포, 운영에 필요한 아
 
 https://spring.io/projects/spring-cloud
 
+
+# ####################################################################
+
+- Distributed/versioned configuration
+- Service registration and discovery
+- Routing
+- Service-to-service calls
+- Load balancing
+- Circuit Breakers
+- Distributed messaging
+
+# ####################################################################
+
 <li class="sidebar_project active">
 <div>
 <a href="https://spring.io/projects/spring-cloud">Spring Cloud</a>
@@ -239,93 +252,87 @@ https://spring.io/projects/spring-cloud
 
 # ####################################################################
 
-- Distributed/versioned configuration
-- Service registration and discovery
-- Routing
-- Service-to-service calls
-- Load balancing
-- Circuit Breakers
-- Distributed messaging
-
 
 분산 컨피규레이션
 
     Spring Cloud Config
 
-    Spring Cloud Zookeeper Config
-
-    Spring Cloud Consul Config
-
-    Spring Cloud Etcd Config
-
-    Spring Cloud Kubernetes Config
-
+    Spring Cloud Bus
 
 서비스 디스커버리
 
-    Spring Cloud Eureka
+    Spring Cloud Netflix
 
-    Spring Cloud Zookeeper Discovery
+    Spring Cloud Gateway
 
-    Spring Cloud Consul Discovery
+    Spring Cloud Zookeeper
 
-    Spring Cloud Etcd Discovery
+    Spring Cloud Consul
 
-    Spring Cloud Kubernetes Discovery
+    Spring Cloud Kubernetes
 
+상호 통신 & 메시징 및 통합
 
-상호 통신
+   Spring Cloud Open Service Broker
+   
+   Spring Cloud OpenFeign
 
-    Spring Cloud Hystrix
+   Spring Cloud Stream
 
-    Spring Cloud Ribbon
+   Spring Cloud Stream Applications
 
-    Spring Cloud Feign
-
-    Spring Cloud Zuul
-
+   Spring Cloud App Broker
 
 추적
 
     Spring Cloud Sleuth
 
-    Spring Cloud Sleuth Zipkin
-
-    Spring Cloud Sleuth Stream
-
-
 클라우드 플랫폼 지원
 
-    Spring Cloud Cloud Foundry
+  Spring Cloud for Cloud Foundry
 
-    Spring Cloud AWS
+  Spring Cloud - Cloud Foundry Service Broker
 
-    Spring Cloud Function
+  Spring Cloud Azure
 
-    Spring Cloud Connectors
+  Spring Cloud Alibaba
 
+  Spring Cloud for Amazon Web Services
 
-메시징 및 통합
-
-    Spring Cloud Stream
-
-    Spring Cloud Bus
-
-    Spring Cloud Stream Apps
-
-    Spring Cloud Data Flow
+  Spring Cloud GCP
 
 
 기타
+
+    Spring Cloud Circuit Breaker
+
+    Spring Cloud CLI
+
+    Spring Cloud Commons
+
+    Spring Cloud Connectors
+
+    Spring Cloud Function
+
+    Spring Cloud Pipelines
+
+    Spring Cloud Schema Registry
+
+    Spring Cloud Skipper
+
+    Spring Cloud Vault
 
     Spring Cloud Contract
 
     Spring Cloud Security
 
     Spring Cloud Task
+    
+    Spring Cloud Task App Starters
 
     Spring Cloud Cluster
 
+# ####################################################################
 
 2018년 12월부터 아래 component들은 Maintenance모드 전환 Spring cloud 2.4.X부터는 더 이상 지원하지 안함
 https://spring.io/blog/2018/12/12/spring-cloud-greenwich-rc1-available-now
@@ -341,7 +348,6 @@ Current |Replacement|
 |Ribbon|Spring Cloud Loadbalancer|
 |Zuul 1 |Spring Cloud Gateway|
 |Archaius 1|Spring Boot external config + Spring Cloud Config|
- 	                    
 
 # ####################################################################
 
@@ -477,7 +483,6 @@ https://spring.io/projects/spring-cloud-contract
 [example]
 
 https://spring.io/guides/gs/contract-rest/
-
 
 
 # ####################################################################
