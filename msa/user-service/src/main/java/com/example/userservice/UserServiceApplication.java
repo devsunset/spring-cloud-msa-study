@@ -34,11 +34,18 @@ public class UserServiceApplication {
     }
     
  // FeignClient 어노테이션을 이용하면 직접 해당 URL을 명시하지 않더라도 Eureka 에 register한 Instance 이름을 찾아서 URL을 매핑
-    @FeignClient(name = "team")
+    @FeignClient(name = "team-service")
     public interface TeamServiceClient {
         @GetMapping("/team/{userId}/teams")
         TeamResponseData getTeam(@PathVariable("userId") Long id);
     }
+    
+    @Bean
+    public FeignErrorDecoder getFeignErrorDecoder(){
+       return new FeignErrorDecoder();
+    }
+    
+    /////////////////////////////////////////////////////////////////
 
     @GetMapping("/user/info")
     public String info(@Value("${server.port}") String port) {

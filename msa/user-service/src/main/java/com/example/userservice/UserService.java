@@ -51,6 +51,13 @@ public class UserService {
                 .team(null) // Rest Template or Feign Client
                 .build();
     }
+    
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+//  Rest Template vs.  Fegin 
+//  이름 				코드 가독성, 직관성 					예외 처리 			테스트 용이성 								러닝 커브
+//  Rest Template 		가독성이 좋게 하기 위한 추가 작업 필요    try-catch 			Spring 이 구현해놓은 객체의 복잡한 stubbing 	낮음
+//  Open Feign 			가독성 좋음  							ErrorDecoder 제공 	일반적인 인터페이스의 간편한 stubbing 		낮음
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
      * 사용자를 조회한다.
@@ -84,7 +91,7 @@ public class UserService {
 	
 	     TeamResponseData team = null;
 	    // Team team = GET team-service/team/{userId}/teams 
-	    // 인식안함 확인필요 - RestTemplate 를 bean 으로 주입할 때, @LoadBalanced 어노테이션을 추가하였기 때문에 직접적인 team-service의 주소 체계를 이용하지 않고 Microservice의 이름 체계를 이용
+	    // RestTemplate 를 bean 으로 주입할 때, @LoadBalanced 어노테이션을 추가하였기 때문에 직접적인 team-service의 주소 체계를 이용하지 않고 Microservice의 이름 체계를 이용
 	    String url = String.format("http://team-service/team/%s/teams", id);
 	    
 	    try {
@@ -97,7 +104,6 @@ public class UserService {
 	      team = responseData.getBody();
 	
 	    }catch (Exception e) {
-	        //return new UserNotEnrolledTeamException("사용자는 팀에 가입되어있지 않습니다.");
 	    	throw e;
 	    }
 	    return UserResponseData.builder()
@@ -125,11 +131,5 @@ public class UserService {
                 .team(team) // Team-Service 로 조회한 Team 정보를 담아서 반환
                 .build();
     }
-    
-//    Fegin vs. Rest Template
-//    이름 				코드 가독성, 직관성 					예외 처리 			테스트 용이성 								러닝 커브
-//    Open Feign 		가독성 좋음  							ErrorDecoder 제공 	일반적인 인터페이스의 간편한 stubbing 		낮음
-//    Rest Template 	가독성이 좋게 되기 위해 다른 작업 필요 	try-catch 			Spring 이 구현해놓은 객체의 복잡한 stubbing 	낮음
-    
     
 }
