@@ -1,5 +1,7 @@
 package com.example.teamservice;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,13 +13,12 @@ import com.example.teamservice.domain.dto.TeamCreateData;
 import com.example.teamservice.domain.dto.TeamMemberAddData;
 import com.example.teamservice.domain.dto.TeamResponseData;
 
-import lombok.extern.slf4j.Slf4j;
-
 @RestController
-@Slf4j
 public class TeamController {
 
     private final TeamService teamService;
+    
+    private static final Logger log = LoggerFactory.getLogger(TeamController.class);
 
     public TeamController(TeamService teamService) {
         this.teamService = teamService;

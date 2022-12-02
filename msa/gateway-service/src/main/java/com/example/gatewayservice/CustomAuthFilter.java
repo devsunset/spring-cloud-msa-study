@@ -4,6 +4,8 @@ package com.example.gatewayservice;
 import java.util.List;
 import java.util.Objects;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
 import org.springframework.http.HttpStatus;
@@ -12,7 +14,6 @@ import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 
-import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Mono;
 
 /**
@@ -21,8 +22,11 @@ import reactor.core.publisher.Mono;
  *
  */
 @Component
-@Slf4j
 public class CustomAuthFilter extends AbstractGatewayFilterFactory<CustomAuthFilter.Config> {
+	
+	private static final Logger log = LoggerFactory.getLogger(CustomAuthFilter.class);
+	
+	
     public CustomAuthFilter() {
         super(Config.class);
     }
@@ -33,7 +37,7 @@ public class CustomAuthFilter extends AbstractGatewayFilterFactory<CustomAuthFil
             ServerHttpRequest request = exchange.getRequest();
             
             log.info("### GatewayFilter apply------------------");
-
+            
             // Request Header 에 token 이 존재하지 않을 때
             if(!request.getHeaders().containsKey("token")){
                 return handleUnAuthorized(exchange); // 401 Error
