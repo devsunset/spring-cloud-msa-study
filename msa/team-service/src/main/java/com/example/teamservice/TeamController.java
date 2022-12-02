@@ -11,7 +11,10 @@ import com.example.teamservice.domain.dto.TeamCreateData;
 import com.example.teamservice.domain.dto.TeamMemberAddData;
 import com.example.teamservice.domain.dto.TeamResponseData;
 
+import lombok.extern.slf4j.Slf4j;
+
 @RestController
+@Slf4j
 public class TeamController {
 
     private final TeamService teamService;
@@ -35,6 +38,7 @@ public class TeamController {
 
     @GetMapping("/team/{userId}/teams")
     public TeamResponseData getTeamByUserId(@PathVariable("userId") Long userId) {
+    	log.info("### TeamController getTeamByUserId------------------");
         return teamService.getTeamByUserId(userId);
     }
 

@@ -13,9 +13,12 @@ import com.example.userservice.domain.dto.TeamResponseData;
 import com.example.userservice.domain.dto.UserCreateData;
 import com.example.userservice.domain.dto.UserResponseData;
 
+import lombok.extern.slf4j.Slf4j;
+
 
 @Service
 @Transactional
+@Slf4j
 public class UserService {
 
     private final UserRepository userRepository;
@@ -36,6 +39,8 @@ public class UserService {
      * @return 저장된 사용자
      */
     public UserResponseData save(UserCreateData userCreateData) {
+    	
+    	log.info("UserService save");
 
         User user = User.builder()
                 .username(userCreateData.getUsername())

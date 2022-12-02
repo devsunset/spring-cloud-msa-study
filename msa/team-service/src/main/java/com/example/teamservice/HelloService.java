@@ -22,7 +22,8 @@ public class HelloService {
         }
     }
 
-    private String helloFallback(Throwable t) {
+    @SuppressWarnings("unused")
+	private String helloFallback(Throwable t) {
         return "fallback invoked! exception type : " + t.getClass();
     }
 

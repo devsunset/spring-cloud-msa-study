@@ -13,10 +13,26 @@ eureka:
     register-with-eureka: true                  # 유레카 클라이언트 활성화
     service-url:
       defaultZone: http://localhost:8761/eureka # 유레카 클라이언트로 등록
+      
+      
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+#  pattern:
+#    level: '[%X{traceId}/%X{spanId}] %-5p [%t] %C{2} - %m%n'
+
 
 spring:
   application:
     name: gateway-service
+  sleuth:
+    sampler:
+      probability: '1.0'
+    traceId128: 'true'
+  zipkin: 
+    base-url: http://localhost:9411/ 
     
 ###  url IP:PORT 직접 지정 방식 - 확장에 제약 
 #  cloud:
