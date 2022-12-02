@@ -273,15 +273,15 @@ https://spring.io/projects/spring-cloud
 
 상호 통신 & 메시징 및 통합
 
-   Spring Cloud Open Service Broker
-   
-   Spring Cloud OpenFeign
+    Spring Cloud Open Service Broker
+    
+    Spring Cloud OpenFeign
 
-   Spring Cloud Stream
+    Spring Cloud Stream
 
-   Spring Cloud Stream Applications
+    Spring Cloud Stream Applications
 
-   Spring Cloud App Broker
+    Spring Cloud App Broker
 
 추적
 
@@ -289,17 +289,17 @@ https://spring.io/projects/spring-cloud
 
 클라우드 플랫폼 지원
 
-  Spring Cloud for Cloud Foundry
+    Spring Cloud for Cloud Foundry
 
-  Spring Cloud - Cloud Foundry Service Broker
+    Spring Cloud - Cloud Foundry Service Broker
 
-  Spring Cloud Azure
+    Spring Cloud Azure
 
-  Spring Cloud Alibaba
+    Spring Cloud Alibaba
 
-  Spring Cloud for Amazon Web Services
+    Spring Cloud for Amazon Web Services
 
-  Spring Cloud GCP
+    Spring Cloud GCP
 
 
 기타
