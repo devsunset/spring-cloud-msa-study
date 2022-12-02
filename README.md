@@ -16,6 +16,7 @@ spring-cloud-msa-work - Spring Cloud(MSA) Tutorials
 - https://wonit.tistory.com/category/%F0%9F%92%8A%20Java/-%20Spring%20Cloud%20for%20MSA
 - https://happycloud-lee.tistory.com/207  ~ /221
 - https://github.com/sc-hklee
+- https://otrodevym.tistory.com/category/%EA%B0%9C%EB%B0%9C%28%ED%95%A9%EB%8B%88%EB%8B%A4%29/Java%26Spring
 # ####################################################################
 
 # Micro Service Architecture
@@ -452,6 +453,11 @@ https://spring.io/projects/spring-cloud-circuitbreaker
 
 https://spring.io/guides/gs/cloud-circuit-breaker/
 
+https://logical-code.tistory.com/172
+
+https://github.com/spring-cloud-samples/spring-cloud-circuitbreaker-demo
+
+https://javachoi.tistory.com/402
 
 ## Tracing
 https://spring.io/projects/spring-cloud-sleuth

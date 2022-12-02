@@ -18,7 +18,8 @@ public class TeamService {
 
     private final TeamRepository teamRepository;
     private final TeamMemberRepository teamMemberRepository;
-    private final RestTemplate restTemplate;
+    @SuppressWarnings("unused")
+	private final RestTemplate restTemplate;
 
     public TeamService(TeamRepository teamRepository, TeamMemberRepository teamMemberRepository, RestTemplate restTemplate) {
         this.teamRepository = teamRepository;

@@ -29,7 +29,7 @@ spring:
 #    port: 5672
 #    username: guest
 #    password: guest
-    
+
 eureka:
   instance:
     instance-id: user-microservice-instance     # 유레카가 인식할 instance id 인데 대쉬보드에서 식별하는 용도로 사용된다.
@@ -39,3 +39,19 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka # eureka server 가 위치하고 있는 기본 주소 defaultZone 같은 경우는 꼭 Camel Case 로 작성
+      
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      failureRateThreshold: 50
+      slowCallRateThreshold: 100
+      slowCallDurationThreshold: 60000
+      permittedNumberOfCallsInHalfOpenState: 4
+      maxWaitDurationInHalfOpenState: 1000
+      slidingWindowType: COUNT_BASED
+      slidingWindowSize: 10
+      minimumNumberOfCalls: 10
+      waitDurationInOpenState: 10000
+  instances:
+    hello:
+      baseConfig: default      
