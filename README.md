@@ -252,88 +252,6 @@ https://spring.io/projects/spring-cloud
 
 # ####################################################################
 
-
-분산 컨피규레이션
-
-    Spring Cloud Config
-
-    Spring Cloud Bus
-
-서비스 디스커버리
-
-    Spring Cloud Netflix
-
-    Spring Cloud Gateway
-
-    Spring Cloud Zookeeper
-
-    Spring Cloud Consul
-
-    Spring Cloud Kubernetes
-
-상호 통신 & 메시징 및 통합
-
-    Spring Cloud Open Service Broker
-
-    Spring Cloud - Cloud Foundry Service Broker
-    
-    Spring Cloud OpenFeign
-
-    Spring Cloud Stream
-
-    Spring Cloud Stream Applications
-
-    Spring Cloud App Broker
-
-추적
-
-    Spring Cloud Sleuth
-
-클라우드 플랫폼 지원
-
-    Spring Cloud for Cloud Foundry
-
-    Spring Cloud Azure
-
-    Spring Cloud Alibaba
-
-    Spring Cloud for Amazon Web Services
-
-    Spring Cloud GCP
-
-    Spring Cloud Connectors
-
-
-기타
-
-    Spring Cloud Circuit Breaker
-
-    Spring Cloud CLI
-
-    Spring Cloud Commons
-
-    Spring Cloud Function
-
-    Spring Cloud Pipelines
-
-    Spring Cloud Schema Registry
-
-    Spring Cloud Skipper
-
-    Spring Cloud Vault
-
-    Spring Cloud Contract
-
-    Spring Cloud Security
-
-    Spring Cloud Task
-    
-    Spring Cloud Task App Starters
-
-    Spring Cloud Cluster
-
-# ####################################################################
-
 2018년 12월부터 아래 component들은 Maintenance모드 전환 Spring cloud 2.4.X부터는 더 이상 지원하지 안함
 https://spring.io/blog/2018/12/12/spring-cloud-greenwich-rc1-available-now
 
@@ -352,7 +270,6 @@ Current |Replacement|
 # ####################################################################
 
 # Spirng Cloud (https://spring.io/cloud)
-
 
 ## Service discovery 
 - MSA의 서비스들의 목록과 위치(IP, Port)가 동적으로 변화는 환경에서 서비스들을 효율적으로 관리하기 위한 Service Discovery Server/Client
@@ -377,11 +294,11 @@ https://spring.io/projects/spring-cloud-zookeeper
 
 https://spring.io/projects/spring-cloud-kubernetes
 
-https://spring.io/guides/gs/spring-cloud-loadbalancer/
-
 [example]
 
 https://spring.io/guides/gs/service-registration-and-discovery/
+
+https://spring.io/guides/gs/spring-cloud-loadbalancer/
 
 https://wonit.tistory.com/495
 
@@ -410,6 +327,8 @@ https://wonit.tistory.com/500
 
 https://docs.spring.io/spring-cloud-config/docs/3.1.5/reference/html/
 
+https://docs.spring.io/spring-cloud-bus/docs/current/reference/html/
+
 https://spring.io/projects/spring-cloud-config
 
 https://spring.io/projects/spring-cloud-bus
@@ -431,9 +350,11 @@ https://wonit.tistory.com/512
 ## API Call
 - 마이크로서비스에서 서비스간 통신을 위한 2가지 방법 [OpenFeign vs Rest Template]
 
-[example]
+https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/
 
 https://spring.io/projects/spring-cloud-openfeign
+
+[example]
 
 https://wonit.tistory.com/506
 
@@ -442,6 +363,8 @@ https://wonit.tistory.com/507
 ## Circuit breakers
 - MSA에서 특정 MSA 서비스 장애로 인해 다른 MSA 서비스에도 장애를 일으킬 수 있는 가능성을 방지하는 것
 - Software 기반 Circuit Breaker, 장애 상황을 견딜 수 있도록 해주는 Spring Cloud component
+
+https://docs.spring.io/spring-cloud-circuitbreaker/docs/current/reference/html/
 
 Resilience4J
 - https://resilience4j.readme.io/docs/getting-started
@@ -466,19 +389,25 @@ https://github.com/spring-cloud-samples/spring-cloud-circuitbreaker-demo
 https://javachoi.tistory.com/402
 
 ## Tracing
+https://docs.spring.io/spring-cloud-sleuth/docs/current/reference/html/
+
 https://spring.io/projects/spring-cloud-sleuth
 
 https://zipkin.io/
 
 [example]
 
+https://github.com/openzipkin-attic/sleuth-webmvc-example
+
 https://wonit.tistory.com/625
 
 https://wonit.tistory.com/626
 
-## Testing
-https://spring.io/projects/spring-cloud-contract
 
+## Testing
+https://docs.spring.io/spring-cloud-contract/docs/current/reference/html/
+
+https://spring.io/projects/spring-cloud-contract
 
 [example]
 
