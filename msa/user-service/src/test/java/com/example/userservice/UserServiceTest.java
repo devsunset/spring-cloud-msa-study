@@ -43,7 +43,6 @@ public class UserServiceTest {
                 .name("team name")
                 .address("address")
                 .build();
-        
         /*
         given(userRepository.findById(anyLong())).willReturn(Optional.of(user));
 
