@@ -274,6 +274,8 @@ https://spring.io/projects/spring-cloud
 상호 통신 & 메시징 및 통합
 
     Spring Cloud Open Service Broker
+
+    Spring Cloud - Cloud Foundry Service Broker
     
     Spring Cloud OpenFeign
 
@@ -291,8 +293,6 @@ https://spring.io/projects/spring-cloud
 
     Spring Cloud for Cloud Foundry
 
-    Spring Cloud - Cloud Foundry Service Broker
-
     Spring Cloud Azure
 
     Spring Cloud Alibaba
@@ -300,6 +300,8 @@ https://spring.io/projects/spring-cloud
     Spring Cloud for Amazon Web Services
 
     Spring Cloud GCP
+
+    Spring Cloud Connectors
 
 
 기타
@@ -309,8 +311,6 @@ https://spring.io/projects/spring-cloud
     Spring Cloud CLI
 
     Spring Cloud Commons
-
-    Spring Cloud Connectors
 
     Spring Cloud Function
 
