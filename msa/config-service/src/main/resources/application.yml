@@ -6,11 +6,17 @@ management:
   endpoints:
     web:
       exposure:
-        include: health, beans, refresh  
+        include: health, beans, refresh , busrefresh  
 
 spring:
   application:
     name: config-service
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
+
 
 # local file 연결 - # local-msa-config 테스트시 주석 해제     
 #  profiles:
