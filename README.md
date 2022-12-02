@@ -395,6 +395,11 @@ https://spring.io/projects/spring-cloud-sleuth
 
 https://zipkin.io/
 
+* zipkin install 
+
+curl -sSL https://zipkin.io/quickstart.sh | bash -s
+java -jar zipkin.jar
+
 [example]
 
 https://github.com/openzipkin-attic/sleuth-webmvc-example
@@ -403,6 +408,7 @@ https://wonit.tistory.com/625
 
 https://wonit.tistory.com/626
 
+https://happycloud-lee.tistory.com/216
 
 ## Testing
 https://docs.spring.io/spring-cloud-contract/docs/current/reference/html/
