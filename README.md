@@ -405,6 +405,8 @@ https://docs.spring.io/spring-cloud-config/docs/3.1.5/reference/html/
 
 https://spring.io/projects/spring-cloud-config
 
+https://spring.io/projects/spring-cloud-bus
+
 [example]
 
 https://spring.io/guides/gs/centralized-configuration/
