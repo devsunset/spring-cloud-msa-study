@@ -26,14 +26,14 @@ spring:
 #    config:
 #      server:
 #        native:
-#          search-locations: /workspace/devwork/spring-cloud-msa-work/msa/local-msa-config  # file://${user.home}/외부-설정-파일-경로
+#          search-locations: /workspace/devwork/spring-cloud-msa-study/msa/local-msa-config  # file://${user.home}/외부-설정-파일-경로
          
 #  git 저장소 연결   
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/devsunset/spring-cloud-msa-work
+          uri: https://github.com/devsunset/spring-cloud-msa-study
 #          username: 
 #          password: 
 
